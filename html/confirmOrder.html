@@ -27,9 +27,11 @@
       <div class="method">自提</div>
       <div class="address">
         <img src="../images/icon-address.png" alt="">
-        <div class="select">请选择提货地址</div>
+        <!-- <div class="select">请选择提货地址</div> -->
+        <div class="ad">天尚精酿鸿盛酒水商行</div>
         <img src="../images/icon-arrow.png" alt="">
       </div>
+      <div class="ad-detail">辽宁省沈阳市铁西区凌空一小区（东门）</div>
     </div>
     <div class="product-box">
       <div class="title">天尚精酿啤酒</div>
@@ -72,6 +74,79 @@
     <div class="btn-box">提交订单</div>
   </div>
 
+  <div class="overlay"></div>
+  <div class="address-popup">
+    <div class="title">选择提货点</div>
+    <div class="address-list">
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(".ad").click(function(){
+      $(".overlay").css("display", "block")
+      $(".address-popup").css("display", "block")
+    })
+    $(".overlay").click(function(){
+      $(".overlay").css("display", "none")
+      $(".address-popup").css("display", "none")
+    })
+  </script>
 </body>
 
 </html>
