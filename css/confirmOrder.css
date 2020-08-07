@@ -1,37 +1,51 @@
+/*header部分样式*/
 .header {
-    height: 44px;
-    background: #0C1278;
-    padding: 0 12px;
-    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    height: 0.44rem;
+    background: rgba(13, 20, 125, 1);
 }
 
 .header .left {
-    width: 20px;
-    height: 20px;
-}
-
-.header .left img {
-    width: 100%;
+    width: 0.36rem;
     height: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header .right {
-    width: 20px;
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
 }
 
 .header .middle {
-    font-size: 16px;
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
     font-weight: bold;
     color: rgba(255, 255, 255, 1);
-    line-height: 22px;
+}
+
+.iconfont {
+    color: #fff;
+    font-size: 0.28rem !important;
 }
 
 .container {
-    padding: 15px 12px;
+    padding: 56px 12px 12px;
 }
 
 .container .address-box {
@@ -40,6 +54,7 @@
     background: rgba(255, 255, 255, 1);
     border-radius: 6px;
     box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
 .container .address-box .method {
@@ -49,6 +64,7 @@
     border: 1px solid rgba(16, 24, 134, 1);
     font-size: 14px;
     font-weight: 400;
+    text-align: center;
     color: rgba(13, 20, 125, 1);
     line-height: 24px;
     margin-bottom: 10px;
@@ -78,6 +94,7 @@
     background: rgba(255, 255, 255, 1);
     border-radius: 6px;
     box-sizing: border-box;
+    margin-bottom: 15px;
 }
 
 .container .product-box .title {
@@ -145,4 +162,120 @@
     font-weight: 400;
     color: rgba(51, 51, 51, 1);
     line-height: 22px;
+}
+
+.container .product-box .produce-total {
+    text-align: right;
+    margin-top: 7px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .product-box .produce-total .one {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.container .product-box .produce-total .two {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 20px;
+}
+
+.container .product-box .produce-total .three {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E40000;
+    line-height: 20px;
+}
+
+.container .product-box .produce-total .four {
+    font-size: 14px;
+    font-weight: 400;
+    color: #EC2200;
+    line-height: 20px;
+}
+
+.container .coupons-box {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .coupons-box .left {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 22px;
+}
+
+.container .coupons-box .right {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 22px;
+}
+
+.container .coupons-box .right img {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.footer {
+    width: 100%;
+    height: 49px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    bottom: 0;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer .left-money {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 22px
+}
+
+.footer .left-money span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #E40000;
+    line-height: 22px
+}
+
+.footer .left-money .total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #E40000;
+    line-height: 22px
+}
+
+.footer .btn-box {
+    width: 112px;
+    height: 36px;
+    background: rgba(13, 20, 125, 1);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: 36px;
+    text-align: center;
 }
