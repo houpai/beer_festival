@@ -53,7 +53,7 @@ section {
 }
 
 section .swiper-container {
-    height: 3.75rem;
+    /*height: 3.75rem;*/
 }
 
 section .swiper-pagination {
