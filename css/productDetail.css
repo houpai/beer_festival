@@ -1,147 +1,178 @@
 * {
-  font-size: 0.16rem;
-  box-sizing: border-box;
+    font-size: 0.16rem;
+    box-sizing: border-box;
 }
+
 body {
-  background: #ffffff;
+    background: #F4F4F4;
 }
+
+.swiper-slide img {
+    height: 100%;
+}
+
+.iconfont {
+    font-size: 0.28rem !important;
+}
+
 header {
-  width: 100%;
-  background-color: #f0f2f5;
-  height: 0.44rem;
-  font-size: 0.16rem;
-  display: flex;
-  position: fixed;
-  top: 0;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
+    background-color: #f0f2f5;
+    height: 0.44rem;
+    font-size: 0.16rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
 }
+
 header a {
-  width: 0.44rem;
-  height: 0.44rem;
-  text-align: center;
-  line-height: .44rem;
-  font-size: 0.16rem;
+    width: 0.44rem;
+    height: 0.44rem;
+    text-align: center;
+    line-height: .44rem;
+    font-size: 0.16rem;
 }
+
 header span {
-  overflow: hidden;
-  width: auto;
-  margin: 0;
-  font-size: 0.16rem;
-  color: #333333;
-  text-align: center;
-  text-overflow: ellipsis;
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+    font-size: 0.16rem;
+    color: #333333;
+    text-align: center;
+    text-overflow: ellipsis;
 }
-section{
+
+section {
     margin-top: .44rem;
 }
+
 section .swiper-container {
-  height: 3.75rem;
+    height: 3.75rem;
 }
+
 section .swiper-pagination {
-  width: 0.41rem;
-  height: 0.17rem;
-  font-size: 0.12rem;
-  line-height: 0.17rem;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-  right: 0.1rem;
-  left: auto;
-  color: #ffffff;
-  border-radius: 0.09rem;
+    width: 0.41rem;
+    height: 0.17rem;
+    font-size: 0.12rem;
+    line-height: 0.17rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    right: 0.1rem;
+    left: auto;
+    color: #ffffff;
+    border-radius: 0.09rem;
 }
+
 .price-info {
-  padding: 0.12rem;
-  height: 1.66rem;
-  background: #f0f2f5;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    padding: 0.12rem;
+    height: 1.66rem;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+
 .price-info div {
-  font-size: 0.16rem;
+    font-size: 0.16rem;
 }
+
 .price-info div b {
-  font-size: 0.24rem;
-  color: #e40000;
+    font-size: 0.24rem;
+    color: #e40000;
 }
+
 .price-info div em {
-  font-size: 0.14rem;
-  color: #e40000;
+    font-size: 0.14rem;
+    color: #e40000;
 }
+
 .price-info div span {
-  font-size: 0.12rem;
-  color: #999999;
+    font-size: 0.12rem;
+    color: #999999;
 }
+
 .price-info h4 {
-  font-size: 0.14rem;
+    font-size: 0.14rem;
 }
 
 .price-info h6 {
-  font-size: 0.12rem;
-  color: #999999;
+    font-size: 0.12rem;
+    color: #999999;
 }
+
 .price-info .btn {
-  width: 0.76rem;
-  height: 0.24rem;
-  display: block;
-  border-radius: 0.02rem;
-  border: 1px solid #0c1278;
-  font-size: 0.14rem;
-  color: #0c1278;
-  text-align: center;
-  line-height: 0.24rem;
+    width: 0.76rem;
+    height: 0.24rem;
+    display: block;
+    border-radius: 0.02rem;
+    border: 1px solid #0c1278;
+    font-size: 0.14rem;
+    color: #0c1278;
+    text-align: center;
+    line-height: 0.24rem;
 }
+
 .norms-info {
-  padding: 0 0.12rem;
-  display: flex;
-  height: .42rem;
-  justify-content: space-between;
-  font-size: 0.16rem;
-  align-items: center;
-  margin: 0.1rem 0;
-  color: #333333;
-  background: #f0f2f5;
+    padding: 0 0.12rem;
+    display: flex;
+    height: .42rem;
+    justify-content: space-between;
+    font-size: 0.16rem;
+    align-items: center;
+    margin: 0.1rem 0;
+    color: #333333;
+    background: #f0f2f5;
 }
+
 .goods-info {
-  background: #f0f2f5;
-  font-size: 0.16rem;
-  padding: 0.1rem;
-  text-align: center;
+    background: #f0f2f5;
+    font-size: 0.16rem;
+    padding: 0.1rem;
+    text-align: center;
 }
+
 .goods-info h4 img {
-  width: 1.6rem;
-  height: 0.33rem;
-  margin-bottom: .1rem;
-  border: 1px dashed #ddd;
+    width: 1.6rem;
+    height: 0.33rem;
+    margin-bottom: .1rem;
+    border: 1px dashed #ddd;
 }
+
 .goods-info div img {
-  width: 3.5rem;
+    width: 3.5rem;
 }
-.bottom{
+
+.bottom {
     height: .8rem;
     display: flex;
     justify-content: space-between;
-    padding:.15rem;
+    padding: .15rem;
     position: fixed;
     bottom: 0;
     background: #ffffff;
     z-index: 9;
     width: 100%;
 }
-.bottom div img{
+
+.bottom div img {
     width: .2rem;
     height: .2rem;
 }
-.bottom div i{
+
+.bottom div i {
     color: #0D147D;
     font-size: .12rem;
 }
-.bottom div{
+
+.bottom div {
     text-align: center;
     font-size: .16rem;
 }
-.bottom .btn{
+
+.bottom .btn {
     width: 1.12rem;
     height: .36rem;
     line-height: .36rem;
@@ -151,6 +182,7 @@ section .swiper-pagination {
     font-size: .16rem;
     text-align: center;
 }
+
 /* .bg {
     background: #0c1278;
     height: 1.2rem;
