@@ -1,14 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>商品详情</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/productDetail.css">
+  <link rel="stylesheet" href="../css/swiper.css">
   <script src="../js/fontsize.js"></script>
   <script src="../js/jquery-1.2.3.min.js"></script>
+  <script src="../js/swiper.min.js"></script>
 </head>
-<body>
 
+<body>
+  <header>
+    <a href="">11</a>
+    <span class="header_title">商品详情</span>
+    <a href=""></a>
+  </header>
+
+  <section>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+        <div class="swiper-slide"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="price-info">
+      <div>
+        <b>88</b>
+        <em>工分</em>
+        <span style="text-decoration:line-through;">原价：¥588</span>
+      </div>
+      <h4>天尚鲜啤酒-5L</h4>
+      <h6>鲜啤酒介绍鲜啤酒介绍鲜啤酒介绍鲜啤酒介绍鲜啤酒介绍鲜啤酒介绍鲜啤酒介绍鲜啤酒介绍</h6>
+      <span class="btn">
+        到店自提
+      </span>
+    </div>
+    <div class="norms-info">
+      <span>规格</span>
+      <span>5L</span>
+    </div>
+    <div class="goods-info">
+      <h4>
+        <img src="../images/spxq.png" alt="">
+      </h4>
+      <div>
+        <img src="../images/info.png" alt="">
+      </div>
+    </div>
+
+    <!-- <div class="bg"></div>
+    <div class="info">
+      <div class="top">
+        <span class="btn">
+          自提
+        </span>
+        <div>
+          <span>@</span>
+          <b>天尚精酿鸿盛酒水商行</b>
+          <span>></span>
+        </div>
+        <p>辽宁省沈阳市铁西区凌空一小区（东门）</p>
+      </div>
+      <div class="center">
+        <h6>天尚精酿啤酒</h6>
+        <div class="infomation">
+          <img src="" alt="">
+          <div>
+            <h5>天尚鲜啤酒-5L</h5>
+          </div>
+        </div>
+        <p>
+          实付款
+          <span>88</span>
+          <b>工分</b>
+        </p>
+      </div>
+      <div class="bottom"></div>
+    </div> -->
+  </section>
+  <div class="bottom">
+    <div>
+      <img src="../images/kf.png" alt=""><br/>
+      <i>客服</i>
+    </div>
+    <span class="btn">
+      立即购买
+    </span>
+  </div>
 </body>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: true,//可选选项，自动滑动
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'custom',
+      renderCustom: function (swiper, current, total) {
+        return current + '/' + total;
+      }
+    },
+  })
+</script>
+
 </html>
