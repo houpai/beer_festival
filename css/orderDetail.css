@@ -1,0 +1,284 @@
+/*header部分样式*/
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  height: 0.44rem;
+  background:#0C1278;
+}
+
+.header .left {
+  width: 0.36rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .right {
+  width: 0.36rem;
+  height: 100%;
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+
+.header .middle {
+  flex: 1;
+  width: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+}
+
+.iconfont {
+  color: #fff;
+  font-size: 0.28rem !important;
+}
+
+.detailback {
+  width: 3.75r;
+  height: 1.65rem;
+  background-color: #0C1278;
+  display: flex;
+  flex-direction: row;
+}
+
+.detailbackpic{
+    margin-left: 0.22rem;
+    margin-top: 0.44rem;
+    width: 0.78rem;
+    height: 0.78rem;
+}
+
+.detailbackpic img{
+    width: 100%;
+    height: 100%;
+}
+
+.detailbacktxt{
+    height: 0.22rem;
+    line-height: 0.22rem;
+    margin-left: 0.15rem;
+    margin-top: 0.80rem;
+    font-size: 0.16rem;
+    color: #fff;
+}
+
+.container {
+    margin-top: -0.66rem;
+    padding: 0.15rem 0.12rem;
+}
+
+.container .address-box {
+    width: 100%;
+    padding: 0.1rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0.06rem;
+    box-sizing: border-box;
+}
+
+.container .address-box .method {
+    width: 0.48rem;
+    height: 0.24rem;
+    border-radius: 0.02rem;
+    border: 0.01rem solid rgba(16, 24, 134, 1);
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: rgba(13, 20, 125, 1);
+    line-height: 0.24rem;
+    margin-bottom: 0.10rem;
+    text-align: center;
+}
+
+.container .address-box .address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .address-box .address img {
+    width: 0.20rem;
+}
+
+.container .address-box .address .select {
+    flex: 1;
+    font-size: 0.16rem;
+    font-weight: 400;
+    color:#333333;
+    font-weight: bold;
+    line-height: 0.22rem;
+}
+
+.addde{
+    font-size: 0.14rem;
+    color: #999;
+    margin-top: 0.1rem;
+    margin-left: 0.2rem;
+}
+
+.container .product-box {
+    width: 100%;
+    padding: 0.10rem;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 0.06rem;
+    box-sizing: border-box;
+    margin-top: 0.15rem;
+}
+
+.container .product-box .title {
+    font-size: 0.14rem
+    ;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.20rem;
+    margin-bottom: 0.10rem;
+}
+
+.container .product-box .product {
+    display: flex;
+    justify-content: center;
+}
+
+.produce-total{
+    height: 0.45rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.produce-shiji{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.shiji1{
+    font-size: 0.14rem;
+    color: #333333;
+}
+
+.shiji2{
+    font-size: 0.2rem;
+    color: #E40000;
+}
+
+.shiji3{
+    font-size: 0.14rem;
+    color: #EC2200;
+}
+
+.container .product-box .product .left-img {
+    width: 0.72rem;
+    height: 0.72rem;
+    background: rgba(244, 244, 244, 1);
+    border-radius: 0.06rem;
+    margin-right: 0.10rem;
+}
+
+.container .product-box .product .left-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.container .product-box .product .right-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .product-box .product .right-info .s-name {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.22rem;
+    margin-top: 0.03rem;
+}
+
+.container .product-box .product .right-info .price-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .product-box .product .right-info .price-num .price {
+    font-size: 0.20rem;
+    font-weight: bold;
+    color: rgba(228, 0, 0, 1);
+    line-height: 0.24rem;
+}
+
+.container .product-box .product .right-info .price-num .price span {
+    font-size: 0.14rem;
+    line-height: 0.28rem;
+}
+
+.container .product-box .product .right-info .price-num .num {
+    font-size: 0.16rem;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.22rem;
+}
+
+.footer{
+    width: 100%;
+    height: 0.49rem;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.btn-box{
+    position: absolute;
+    right: 0.12rem;
+    width: 1.12rem;
+    height: 0.36rem;
+    background-color: #0D147D;
+    color: #fff;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.36rem;
+    border-radius: 0.06rem;
+}
+
+.orderde{
+    width: 3.51rem;
+    height: auto;
+    background-color: #fff;
+    margin-top: 0.15rem;
+    border-radius: 0.06rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderde-title{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333;
+    padding: 0.1rem 0.1rem 0 0.1rem;
+    line-height: 0.22rem;
+}
+
+.orderde-txt{
+    font-size: 0.14rem;
+    color: #333;
+    padding: 0.1rem 0.1rem 0 0.1rem;
+    line-height: 0.2rem;
+}
+
+.orderde-txt:last-child{
+    padding-bottom: 0.1rem;
+}

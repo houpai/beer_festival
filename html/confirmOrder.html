@@ -1,14 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>确认订单</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/confirmOrder.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
   <script src="../js/fontsize.js"></script>
   <script src="../js/jquery-1.2.3.min.js"></script>
 </head>
-<body>
 
+<body>
+  <div class="header">
+    <div class="left">
+      <i class="iconfont icon-left"></i>
+    </div>
+    <div class="middle">
+      确认订单
+    </div>
+    <div class="right"></div>
+  </div>
+
+  <div class="container">
+    <div class="address-box">
+      <div class="method">自提</div>
+      <div class="address">
+        <img src="../images/icon-address.png" alt="">
+        <!-- <div class="select">请选择提货地址</div> -->
+        <div class="ad">天尚精酿鸿盛酒水商行</div>
+        <img src="../images/icon-arrow.png" alt="">
+      </div>
+      <div class="ad-detail">辽宁省沈阳市铁西区凌空一小区（东门）</div>
+    </div>
+    <div class="product-box">
+      <div class="title">天尚精酿啤酒</div>
+      <div class="product">
+        <div class="left-img">
+          <img
+            src="http://thirdwx.qlogo.cn/mmopen/icTNT8MxQgGdVicgy1ENAgVu3Uic4etibDgm6vyVp3fdrbaljTSa5M2PicwxMrCic82TianqnwT7oicIzwAeRjOcNV4PCw/132"
+            alt="">
+        </div>
+        <div class="right-info">
+          <div class="s-name">天尚鲜啤酒-5L</div>
+          <div class="price-num">
+            <div class="price">88<span>工分</span></div>
+            <div class="num">x1</div>
+          </div>
+        </div>
+      </div>
+      <div class="produce-total">
+        <span class="one">共1件</span>
+        <span class="two">商品小计：</span>
+        <span class="three">88</span>
+        <span class="four">工分</span>
+      </div>
+    </div>
+    <div class="coupons-box">
+      <div class="left">优惠券</div>
+      <div class="right">
+        暂无可用
+        <img src="../images/icon-arrow.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="left-money">
+      应付：
+      <span class="total">88</span>
+      <span>工分</span>
+    </div>
+    <div class="btn-box">提交订单</div>
+  </div>
+
+  <div class="overlay"></div>
+  <div class="address-popup">
+    <div class="title">选择提货点</div>
+    <div class="address-list">
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+      <div class="item">
+        <div class="left">
+          <p>天尚精酿鸿盛酒水商行</p>
+          <span>辽宁省沈阳市铁西区凌空一小区（东门）</span>
+        </div>
+        <div class="right">16.0km</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(".ad").click(function(){
+      $(".overlay").css("display", "block")
+      $(".address-popup").css("display", "block")
+    })
+    $(".overlay").click(function(){
+      $(".overlay").css("display", "none")
+      $(".address-popup").css("display", "none")
+    })
+  </script>
 </body>
+
 </html>

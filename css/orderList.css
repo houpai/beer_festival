@@ -1,0 +1,202 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: rgba(13, 20, 125, 1);
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.iconfont {
+    color: #fff;
+    font-size: 0.28rem !important;
+}
+
+.orderList {
+    padding: 0.56rem 0.12rem 0.24rem 0.12rem;
+}
+
+.orderList li {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    margin-bottom: 0.15rem;
+    padding: 0.12rem;
+}
+
+.orderList li .title_orderStatus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderList li .title_orderStatus .product_name {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+.orderList li .title_orderStatus .orderStatus {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: rgba(228, 0, 0, 1);
+}
+
+.waiting_pickUp {
+    color: rgba(228, 0, 0, 1) !important;
+}
+
+.waiting_pay {
+    color: darkgreen !important;
+}
+
+.complete {
+    color: #333333 !important;
+}
+
+.product_message {
+    display: flex;
+    margin: 0.1rem 0 0 0;
+}
+
+.product_message .product_img {
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 0.72rem;
+    height: 0.72rem;
+}
+
+.product_message .product_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 0;
+    margin-left: 0.1rem;
+}
+
+.product_message .product_detail .specifications {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+
+.product_message .product_detail .price_number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0.5rem;
+}
+
+.product_message .product_detail .price_number .price {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.product_message .product_detail .price_number .price i {
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: rgba(228, 0, 0, 1);
+}
+
+.product_message .product_detail .price_number .price b {
+    font-size: 0.14rem !important;
+    font-weight: bold;
+    color: rgba(228, 0, 0, 1);
+}
+
+.product_message .product_detail .price_number .number {
+    font-size: 0.16rem;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+
+.pay_detail {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.1rem 0;
+}
+
+.pay_detail p {
+    min-height: 0.2rem;
+    font-size: 0.14rem;
+}
+
+.pay_detail p .price i {
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: rgba(228, 0, 0, 1);
+}
+
+.pay_detail p .price b {
+    font-size: 0.14rem !important;
+    font-weight: bold;
+    color: rgba(228, 0, 0, 1);
+}
+
+
+
+
+
+
+
+.actions_box {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.1rem 0;
+}
+
+.actions_box .btn {
+    width: 1.12rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    background: rgba(13, 20, 125, 1);
+    border-radius: 6px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.16rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
