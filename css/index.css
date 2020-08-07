@@ -1,0 +1,161 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: rgba(13, 20, 125, 1);
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.72rem;
+    height: 100%;
+    font-size: 0.14rem;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.iconfont {
+    color: #fff;
+    font-size: 0.28rem !important;
+}
+
+body, html {
+    min-height: 100%;
+    background-color: rgba(13, 20, 125, 1);
+}
+
+.banner_img {
+    padding: 0 0.4rem 0.4rem 0.4rem;
+}
+
+.banner_img img {
+    display: block;
+    width: 100%;
+}
+
+.bank_icon {
+    margin: 0.44rem 0 0 0.12rem;
+    height: 0.44rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.bank_icon span {
+    display: inline-block;
+    width: 0.81rem;
+    height: 0.28rem;
+    text-align: center;
+    line-height: 0.28rem;
+    background: rgba(161, 0, 0, 1);
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.product_list {
+    padding: 0.3rem 0.46rem;
+}
+
+.product_list li {
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_list li .product_message {
+    display: flex;
+    height: 0.69rem;
+    background: linear-gradient(180deg, rgba(37, 53, 187, 1) 0%, rgba(0, 134, 233, 1) 100%);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 0.05rem 0.1rem;
+}
+
+.product_list li img {
+    display: block;
+    width: 100%;
+    height: 1.26rem;
+}
+
+.product_list li .product_message .left_box {
+    flex: 1;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product_list li .product_message .left_box p{
+    font-size:0.2rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    margin: 0.1rem 0 0 0;
+}
+
+.product_list li .product_message .left_box p span {
+    font-size:0.14rem;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    text-decoration: line-through;
+}
+
+.product_list li .product_message .left_box .desc{
+    font-size:0.14rem;
+    margin: 0 0 0.05rem 0!important;
+}
+
+.product_list li .product_message .right_box {
+    box-sizing: border-box;
+    width:0.62rem;
+    height:0.62rem;
+    border-radius: 50%;
+    background:linear-gradient(180deg,rgba(110,31,31,1) 0%,rgba(234,93,93,1) 1%,rgba(161,0,0,1) 100%);
+    box-shadow:0px 0px 10px 0px rgba(238,81,81,1);
+    padding: 0.02rem;
+    display: flex;
+    align-items: center;
+}
+.product_list li .product_message .right_box p{
+    font-size:0.16rem;
+    line-height: 0.20rem;
+    font-weight:bold;
+    color:rgba(255,255,255,1);
+    letter-spacing:0.02rem;
+}
+
+.product_list li .product_message .right_box .left {
+    text-align: right;
+    margin-right: 0.02rem;
+}
+
+.product_list li .product_message .right_box .right  {
+    font-weight: 400;
+}
+
