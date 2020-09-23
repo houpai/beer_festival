@@ -54,6 +54,8 @@ body {
 
 .content_box .banner {
     width: 100%;
+    background-color: rgba(39, 10, 3, 1);
+    padding-top: 0.44rem;
     /*height: 8.77rem;*/
 }
 
