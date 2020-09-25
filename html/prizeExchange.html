@@ -218,8 +218,16 @@
       let _this = $(this);
       _this.bind("click", function (e) {
         let id = _this[0].dataset.id;
-        if(checkedIdAry.length >= 6) {
-
+        if (checkedIdAry.length >= 6) {
+          // 如果选中数量大于6,则去掉第一个选中的.
+          let firstCheckedId = checkedIdAry[0];
+          let oLi = $(`.prize_list li[data-id=${firstCheckedId}]`);
+          oLi.find(".unSelect").removeClass("hide").addClass("show");
+          oLi.find(".select").removeClass("show").addClass("hide");
+          checkedIdAry.remove(firstCheckedId);
+          checkedIdAry.push(id);
+          $(this).find(".unSelect").removeClass("show").addClass("hide");
+          $(this).find(".select").removeClass("hide").addClass("show");
         } else {
           if (checkedIdAry.includes(id)) {
             checkedIdAry.remove(id);
@@ -231,6 +239,7 @@
             $(this).find(".select").removeClass("hide").addClass("show");
           }
         }
+        console.log("选中的商品id-{Array}", checkedIdAry);
       });
     });
   });
