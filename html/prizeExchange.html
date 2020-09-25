@@ -218,8 +218,8 @@
       let _this = $(this);
       _this.bind("click", function (e) {
         let id = _this[0].dataset.id;
-        if (checkedIdAry.length >= 6) {
-          // 如果选中数量大于6,则去掉第一个选中的.
+        if (checkedIdAry.length >= 6 && !checkedIdAry.includes(id)) {
+          // 如果选中数量大于6并且选择了新的,则去掉第一个选中的.
           let firstCheckedId = checkedIdAry[0];
           let oLi = $(`.prize_list li[data-id=${firstCheckedId}]`);
           oLi.find(".unSelect").removeClass("hide").addClass("show");
