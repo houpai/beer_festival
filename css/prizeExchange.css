@@ -1,0 +1,212 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background-color: #FFFFFF;
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: rgba(51, 51, 51, 1);
+}
+
+.iconfont {
+    color: rgba(51, 51, 51, 1);
+    font-size: 0.28rem !important;
+}
+
+html,body {
+    background: #EDEDED;
+    height: 100%;
+}
+
+.bootom_bar {
+    height: 0.82rem;
+    padding: 0 0.12rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+.bootom_bar  .left_box {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    margin: 0.12rem 0 0 0;
+}
+
+.bootom_bar  .left_box .select_number{
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.bootom_bar  .right_box {
+    margin: 0.05rem 0 0 0;
+}
+
+
+.bootom_bar  .right_box .next_btn {
+    width: 1.31rem;
+    height: 0.4rem;
+    background: #1524AC;
+    border-radius: 0.08rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.prize_content_box {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.prize_content_banner {
+    height: 1.1rem;
+    background-color: rgba(21, 36, 172, 1);
+    padding: 0.44rem 0.12rem 0 0.12rem;
+    background-image: url("../images/icon_vip.png");
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+    background-size: 1.1rem 0.72rem;
+    display: flex;
+}
+
+.prize_desc {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0.1rem 0 0 0;
+    line-height: 0.17rem;
+}
+
+.highlight_span {
+    font-size: 0.16rem;
+    color: RGBA(255, 233, 0, 1);
+}
+
+
+.prize_list {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 0.12rem 0.12rem 0.12rem;
+    margin:0 0.12rem 0.72rem 0.12rem;
+    background: #FFFFFF;
+    border-radius: 0.08rem;
+    position: relative;
+    top: -0.34rem;
+    z-index: 10;
+    overflow: auto;
+}
+
+.prize_list li {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.12rem 0;
+}
+
+.prize_list li .select_box {
+    display: flex;
+    align-items: center;
+}
+
+.prize_list li .select_box img{
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+}
+
+.prize_list li .left_img_msg {
+    display: flex;
+    flex: 1;
+    width: 0;
+}
+
+.prize_list li .left_img_msg .prize_img {
+    margin-right: 0.12rem;
+}
+
+.prize_list li .left_img_msg .prize_img img {
+    display: block;
+    width: 0.42rem;
+    height:0.42rem;
+}
+
+
+.prize_list li .left_img_msg  .prize_p_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prize_list li .left_img_msg  .prize_p_box .prize_name_p {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+
+.prize_list li .left_img_msg  .prize_p_box .prize_desc_p {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+}
+
+
+
+/*定义整体的宽度*/
+.prize_list::-webkit-scrollbar {
+    width: 3px;
+}
+/*定义滚动条轨道*/
+.prize_list::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+/*定义滑块*/
+.prize_list::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(51, 51, 51, 0.2);
+}
