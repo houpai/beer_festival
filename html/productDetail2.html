@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/productDetail2.css">
+  <link rel="stylesheet" href="../css/swiper.css">
+  <link rel="stylesheet" href="../iconfont2/iconfont.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.2.3.min.js"></script>
+  <script src="../js/swiper.min.js"></script>
+</head>
+<body>
+<div class="product_detail_box">
+  <div class="header_box">
+    <img src="../images/logo.png" alt="">
+    <span>联联周边游</span>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1947518301,4228193486&fm=26&gp=0.jpg"
+             alt="">
+      </div>
+      <div class="swiper-slide">
+        <img
+            src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596788763460&di=8ff976a36f5f8abee7e30db5aa7730f3&imgtype=0&src=http%3A%2F%2F1844.img.pp.sohu.com.cn%2Fimages%2Fblog%2F2013%2F2%2F21%2F1%2F17%2Fe17237281_13dbc7a73b2g86_blog.jpg"
+            alt="">
+      </div>
+      <div class="swiper-slide">
+        <img
+            src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596788763458&di=4e873dcbfd73618884130493db914cda&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20180709%2F601e8a0b56364022b8864d2bfc66bb22.jpeg"
+            alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="product_detail_desc">
+    <p class="desc">
+      从小吃到大的烤肉店来了！沈阳22年老店【泰陵烤肉·两店联动】现价118元享343元烤肉四人餐，特级牛小排+招牌大块肉+秘制牛五花+牛护心肉+风干肠+鱼籽沙津菠菜+有机包菜+锡纸金针菇+锡纸酸菜+地瓜片+辣白菜炒饭+调料费4(含自助调料小菜罐头和沙拉)～带给你舌尖上的精致体验！</p>
+    <div class="detail">
+      <p class="price">
+        ￥118 <span>门市价￥343</span>
+      </p>
+      <div class="guige">
+        <span>已售：308</span>
+        <span>库存：1492</span>
+      </div>
+    </div>
+    <div class="footer_box">
+      <div class="btn_box">商城首页</div>
+      <div class="btn_box">咨询客服</div>
+      <div class="btn_box buy_btn">立即购买</div>
+    </div>
+  </div>
+  <div class="guige_detail">
+    <div class="title">规格选择</div>
+    <ul class="guige_ul">
+      <li class="check">
+        A.泰陵烤肉四人餐（皇姑明廉店）
+        <span class="check_icon">√</span>
+      </li>
+      <li>
+        A.泰陵烤肉四人餐（皇姑明廉店）
+        <span class="check_icon">√</span>
+      </li>
+    </ul>
+  </div>
+  <div class="title">商家信息</div>
+  <ul class="store_list">
+  </ul>
+  <div class="title">详细信息</div>
+  <div class="detail_message">
+
+  </div>
+</div>
+</body>
+<script>
+
+  $(document).ready(function () {
+    let mySwiper = new Swiper(".swiper-container", {
+      autoplay: true,//可选选项，自动滑动
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    });
+
+    // 规格选择
+    $(".guige_ul li").each(function (index) {
+      $(this).click(function () {
+        $(".guige_ul li").removeClass("check");
+        $(".guige_ul li").eq(index).addClass("check");
+      });
+    });
+
+    // 点击查看更多
+    const showCount = 4; // 商家数大于showCount展开收起
+    let storeList = [1, 2, 3, 4, 5, 6]; // 商家列表
+    let storeListStr = "";
+    let isMore = false;
+    for (let i = 0; i < storeList.length; i++) {
+      storeListStr += `<li class="${i > showCount - 1 ? "hiddenLi" : "showLi"}">
+                          <i class="iconfont icon-location"></i>
+                          <div class="store_message">
+                            <p>太灵烤肉(中街店)</p>
+                            <p class="sub_address">辽宁省沈阳市小十字街中街路22号</p>
+                          </div>
+                          <a href="tel:4000909975">
+                            <i class="iconfont icon-icon_dianhua"></i>
+                          </a>
+                       </li>`;
+    }
+
+    if (storeList.length > showCount) {
+      storeListStr += `<div class="moreLess_btn">点击查看更多</div>`;
+    }
+
+    $(".store_list").html(storeListStr);
+
+    $(".moreLess_btn").click(function () {
+      if (!isMore) {
+        $(".store_list li").each(function (index) {
+          $(".store_list li").removeClass("hiddenLi");
+        });
+        isMore = true;
+        $(this).text("收起");
+      } else {
+        $(".store_list li").each(function (index) {
+          if (index > showCount - 1) {
+            $(".store_list li").eq(index).addClass("hiddenLi");
+          }
+        });
+        $(this).text("点击查看更多");
+        isMore = false;
+      }
+    });
+
+    // 商品介绍富文本
+
+  });
+
+</script>
+</html>
