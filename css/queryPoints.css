@@ -51,7 +51,7 @@ html, body {
 .queryPoints_container .login_container .login_container_title {
     text-align: center;
     padding-bottom: 0.3rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     font-size: .18rem;
     font-weight: bold;
     color: #333333;
@@ -60,6 +60,7 @@ html, body {
 
 .queryPoints_container .login_container .login_message {
     width: 100%;
+    height: 2.3rem;
 }
 
 .queryPoints_container .login_container .login_message .label {
@@ -68,10 +69,6 @@ html, body {
     color: #333333;
     line-height: .16rem;
     padding: .3rem 0 .1rem .2rem;
-}
-
-.queryPoints_container .login_container .login_message .input_box {
-
 }
 
 .queryPoints_container .login_container .login_message .input_box input {
@@ -97,10 +94,87 @@ html, body {
     top: 0.1rem;
     right: 0.2rem;
     bottom: 0.1rem;
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
     font-size: 0.15rem;
     color: rgba(153, 153, 153, 1);
     display: flex;
     align-items: center;
-    padding: 0 .38rem 0 .4rem;
+    padding: 0 .2rem;
+    width: 1rem;
+    z-index: 9999;
+    justify-content: center;
+}
+
+.queryPoints_container .submit_btn {
+    width: 1.4rem;
+    height: .45rem;
+    background: #B31C16;
+    border-radius: .26rem;
+    font-size: .16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: .21rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.points_detail {
+    width: 100%;
+    height: 1.66rem;
+    background: #F4F4F4;
+    border-radius: .12rem;
+    margin: .45rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.points_detail .touxiang {
+    display: block;
+    width: .54rem;
+    height: .54rem;
+    position: relative;
+    top:-0.27rem;
+}
+
+.points_detail .name {
+    box-sizing: border-box;
+    width: 84%;
+    margin: 0 .14rem    ;
+    font-size: .14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: .16rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-bottom: .14rem;
+}
+
+.points_detail .points_title {
+    font-size: .12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: .16rem;
+    margin: .1rem 0;
+}
+
+.points_detail .points_p {
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.points_detail .points_p .points_span {
+    font-size: .24rem;
+    font-weight: bold;
+    color: #B31C16;
+    line-height: .35rem;
+}
+.points_detail .points_p .points_unit {
+    font-size: .12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: .16rem;
 }

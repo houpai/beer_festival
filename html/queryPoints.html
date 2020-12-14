@@ -9,25 +9,83 @@
   <script src="../js/jquery-1.2.3.min.js"></script>
 </head>
 <body>
-  <div class="queryPoints_container">
-    <div class="logo_container">
-      <img src="../images/ICBCLOGO.png" alt="">
-    </div>
-    <h3 class="queryPoints_title">工行e生活</h3>
-    <div class="login_container">
-      <h4 class="login_container_title">查询工分</h4>
-      <div class="login_message">
-        <div class="label">手机号</div>
-        <div class="input_box">
-          <input type='tel' maxlength="11" />
-        </div>
-        <div class="label">验证码</div>
-        <div class="input_code_box input_box relative">
-          <input type="password" maxlength="5" />
-          <div class="code">39s</div>
-        </div>
+<div class="queryPoints_container">
+  <div class="logo_container">
+    <img src="../images/ICBCLOGO.png" alt="">
+  </div>
+  <h3 class="queryPoints_title">工行e生活</h3>
+  <div class="login_container">
+    <h4 class="login_container_title">查询工分</h4>
+    <div class="login_message">
+      <div class="label">手机号</div>
+      <div class="input_box">
+        <input type='tel' maxlength="11"/>
+      </div>
+      <div class="label">验证码</div>
+      <div class="input_code_box input_box relative">
+        <input type="password" maxlength="5"/>
+        <div class="code">获取验证码</div>
       </div>
     </div>
+    <div class="submit_btn">
+      查询
+    </div>
   </div>
+</div>
 </body>
+<script>
+
+  let hasToken = false;
+  let codeClick = false;
+
+  $(document).ready(function () {
+    $('.code').click(function () {
+      if(codeClick) return false;
+      let time = 60;
+      codeClick = true;
+      let timer = setInterval(function(){
+        time--;
+        let timeText = time + 's';
+        $('.code').text(timeText);
+        if(time==0){
+          codeClick = false;
+          clearInterval(timer);
+          $('.code').text("获取验证码");
+        }
+      },1000);
+    })
+
+    $('.submit_btn').click(function () {
+      hasToken = !hasToken;
+      if (hasToken) {
+        let htmlStr = `
+        <div class="points_detail">
+          <img src="../images/QUERYPOINTSAVATER.png" alt="" class="touxiang">
+          <p class="name">气质神奇一只猫</p>
+          <p class="points_title">你当前的积分</p>
+          <p class="points_p">
+            <span class="points_span">192848</span>
+            <span class="points_unit">工分</span>
+          </p>
+        </div>`;
+        $(this).text('退出');
+        $('.login_message').html(htmlStr);
+      } else {
+        let htmlStr = `
+        <div class="label">手机号</div>
+           <div class="input_box">
+             <input type='tel' maxlength="11"/>
+           </div>
+        <div class="label">验证码</div>
+        <div class="input_code_box input_box relative">
+          <input type="password" maxlength="5"/>
+          <div class="code">发送验证码</div>
+        </div>`;
+        $('.login_message').html(htmlStr);
+        $(this).text('查询');
+      }
+    });
+  });
+
+</script>
 </html>
