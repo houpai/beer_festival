@@ -9,6 +9,25 @@
   <script src="../js/jquery-1.2.3.min.js"></script>
 </head>
 <body>
-
+  <div class="queryPoints_container">
+    <div class="logo_container">
+      <img src="../images/ICBCLOGO.png" alt="">
+    </div>
+    <h3 class="queryPoints_title">工行e生活</h3>
+    <div class="login_container">
+      <h4 class="login_container_title">查询工分</h4>
+      <div class="login_message">
+        <div class="label">手机号</div>
+        <div class="input_box">
+          <input type='tel' maxlength="11" />
+        </div>
+        <div class="label">验证码</div>
+        <div class="input_code_box input_box relative">
+          <input type="number"  οninput="if(value.length>5)value=value.slice(0,5)" />
+          <div class="code">39s</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
