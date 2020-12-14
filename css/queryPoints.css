@@ -94,10 +94,10 @@ html, body {
 
 .queryPoints_container .login_container .login_message .input_box .code {
     position: absolute;
-    top: 0;
+    top: 0.1rem;
     right: 0.2rem;
-    bottom: 0;
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    bottom: 0.1rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
     font-size: 0.15rem;
     color: rgba(153, 153, 153, 1);
     display: flex;
