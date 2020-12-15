@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/queryPoints.css">
   <script src="../js/fontsize.js"></script>
-  <script src="../js/jquery-1.2.3.min.js"></script>
+  <script src="../js/jquery-1.8.3/jquery-1.8.3.min.js"></script>
 </head>
 <body>
 <div class="queryPoints_container">
@@ -39,7 +39,7 @@
   let codeClick = false;
 
   $(document).ready(function () {
-    $('.code').click(function () {
+    $('.code').live('click',function () {
       if(codeClick) return false;
       let time = 60;
       codeClick = true;
@@ -79,7 +79,7 @@
         <div class="label">验证码</div>
         <div class="input_code_box input_box relative">
           <input type="password" maxlength="5"/>
-          <div class="code">发送验证码</div>
+          <div class="code">获取验证码</div>
         </div>`;
         $('.login_message').html(htmlStr);
         $(this).text('查询');

@@ -56,6 +56,7 @@ html, body {
     font-weight: bold;
     color: #333333;
     line-height: .21rem;
+    width: 100%;
 }
 
 .queryPoints_container .login_container .login_message {
