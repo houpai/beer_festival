@@ -1,0 +1,192 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: #fff;
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.iconfont {
+    color: #333333;
+    font-size: 0.28rem !important;
+}
+
+html {
+    background-color: #fff!important;
+}
+.submitGive_container {
+    padding-top: 0.4rem;
+}
+
+.submitGive_container .user_message_box {
+    height: 0.88rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0.03rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+}
+
+.submitGive_container .user_message_box .user_photo {
+    flex-shrink: 0;
+}
+
+.submitGive_container .user_message_box .user_photo .img {
+    display: block;
+    width: 0.48rem;
+    height: 0.48rem;
+}
+
+.submitGive_container .user_message_box .user_message {
+    flex: 1;
+    width: 0;
+    flex-shrink: 0;
+    margin-left: 0.18rem;
+}
+
+.submitGive_container .user_message_box .user_message .name {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem ;
+    margin-bottom: 0.04rem;
+}
+
+.submitGive_container .user_message_box .user_message .phone {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+    margin-top:0.04rem;
+}
+
+.give_box {
+    padding: 0.3rem 0.15rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.give_box  .input_label {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.2rem;
+}
+
+.give_box .choose_box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+.give_box .choose_box .choose_item {
+    width: 0.68rem;
+    height: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.03rem;
+    color:#666666;
+    border: 1px solid #666666;
+    font-size: 0.14rem;
+}
+
+.give_box .choose_box .choose_item.active {
+    background: #488FF1;
+    border: 1px solid #488FF1;
+    color:  #fff;
+}
+
+.give_box .input {
+    display: inline-block;
+    width: 100%;
+    height: 0.4rem;
+    background: #EDEDED;
+    border-radius: 0.03rem;
+    border: 0;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #999999;
+    box-sizing: border-box;
+    padding: 0 0.12rem;
+    margin-bottom: 0.2rem;
+
+}
+
+.give_box .input:focus {
+    outline: none;
+}
+
+.give_box .textarea {
+    width: 100%;
+    min-height:1.4rem;
+    background: #EDEDED;
+    border-radius: 3px;
+    border: 0;
+}
+
+.give_box .textarea:focus {
+    outline: none;
+}
+
+.submit_btn_box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 0.15rem 0.15rem 0.3rem 0.15rem;
+}
+
+.submit_btn_box .submit_btn {
+    height: 0.44rem;
+    background: #488FF1;
+    border-radius: 0.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+

@@ -128,7 +128,7 @@ body .flex_box{
 .list_box {
     flex-shrink: 0;
     margin: 0.15rem;
-    padding: 1.8rem 0 0 0;
+    padding: 1.6rem 0 0 0;
 }
 
 .list_box .list_item {
