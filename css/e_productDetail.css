@@ -1,0 +1,220 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: #fff;
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.iconfont {
+    color: #333333;
+    font-size: 0.28rem !important;
+}
+
+.e_productDetail_container {
+    padding: 0.44rem 0 1rem 0   ;
+}
+
+.banner_box {
+    height: 2.9rem;
+    background-image: url("https://houpai-1259269309.cos.ap-beijing.myqcloud.com/kfc2.jfif");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.fixed_box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.15rem 0.15rem 0.3rem 0.15rem;
+    z-index: 10;
+    background-color: rgba(242, 242, 242, 1);
+    box-sizing: border-box;
+}
+
+.fixed_box .pay_box {
+    display: flex;
+    height: 0.44rem;
+    border-radius: 0.03rem;
+    overflow: hidden;
+}
+
+.fixed_box .pay_box .left {
+    height: 100%;
+    flex: 1;
+    width: 0;
+    flex-shrink: 0;
+    background-color: rgba(52, 53, 54, 1);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0.15rem;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+
+}
+
+.fixed_box .pay_box .right {
+    flex-shrink: 0;
+    width: 0.98rem;
+    background: #488FF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+}
+
+
+.detail_box {
+    height: 0.86rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0.03rem;
+    margin: -0.43rem 0.15rem 0.2rem 0.15rem;
+    box-sizing: border-box;
+    padding: 0.15rem 0;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/hand.png");
+    background-repeat: no-repeat;
+    background-size: 0.58rem 0.76rem;
+    background-position: right bottom;
+}
+
+.detail_box .left_box {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.detail_box .left_box .current_price {
+    font-size: 0.2rem;
+    font-weight: 500;
+    color: #FC302C;
+    line-height: 0.28rem;
+
+}
+
+.detail_box .left_box .price {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.2rem;
+    text-decoration: line-through;
+}
+
+.detail_box .right_box {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 0.15rem;
+}
+
+.detail_box .right_box .product_name {
+    font-size: 0.14rem;
+    font-weight: 500;
+    color: #333333;
+    line-height: 0.2rem
+}
+
+.detail_box .right_box .date {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+}
+
+
+.store_box {
+    margin: 0.2rem 0.15rem;
+    background: #FFFFFF;
+    border-radius: 0.03rem;
+    box-sizing: border-box;
+    padding: 0.15rem;
+}
+
+.box_label {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.15rem;
+}
+
+.store_box .flex_box {
+    display: flex;
+    margin-bottom: 0.15rem;
+}
+
+.store_box .flex_box .value, .store_box .flex_box .label {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.store_box .flex_box .value {
+    flex: 1;
+    width: 0;
+}
+
+.desc_box {
+    margin: 0.2rem 0.15rem;
+    background: #FFFFFF;
+    border-radius: 0.03rem;
+    box-sizing: border-box;
+    padding: 0.15rem;
+}
+
+.desc_box .desc_detail {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+}
