@@ -1,0 +1,263 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: rgba(72, 143, 241, 1);
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #fffdef;
+}
+
+.iconfont {
+    color: #fff;
+    font-size: 0.28rem !important;
+}
+
+
+.myExtension_container {
+    padding-top: 0.44rem;
+}
+
+.myExtension_container .code_box {
+    background-color: rgba(72, 143, 241, 1);
+    padding: 0.2rem;
+}
+
+.myExtension_container .code_box .code_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.2rem;
+    box-sizing: border-box;
+    padding: 0.4rem 0;
+    background-color: #fff;
+
+    border-radius: 0.03rem;
+}
+
+.myExtension_container .code_box .code_container .user_photo {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-bottom: 0.08rem;
+}
+
+.myExtension_container .code_box .code_container .code_img {
+    display: block;
+    width: 2.36rem;
+    height: 2.36rem;
+    margin-bottom: 0.08rem;
+}
+
+.myExtension_container .code_box .code_container .tip_black {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+
+.myExtension_container .code_box .code_container .tip_gray {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+
+}
+
+.myExtension_box {
+    padding: 0.5rem 0.15rem 0.24rem 0.15rem;
+    box-sizing: border-box;
+}
+
+.myExtension_box .box_title {
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.25rem;
+    margin-bottom: 0.15rem;
+
+}
+
+.myExtension_box .myExtension_list {
+
+}
+
+.myExtension_box .myExtension_list .myExtension_list_item {
+    display: flex;
+    height: 0.84rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0.03rem;
+    margin-bottom: 0.15rem;
+    box-sizing: border-box;
+    padding: 0.15rem;
+}
+
+.myExtension_box .myExtension_list .myExtension_list_item .user_photo {
+    flex-shrink: 0;
+}
+
+.myExtension_box .myExtension_list .myExtension_list_item .user_photo img {
+    display: block;
+    width: 0.54rem;
+    height: 0.54rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.myExtension_box .myExtension_list .myExtension_list_item .myExtension_message {
+    flex: 1;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0.15rem;
+}
+
+.myExtension_box .myExtension_list .myExtension_list_item .myExtension_message .name_price, .myExtension_box .myExtension_list .myExtension_list_item .myExtension_message .type_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.14rem;
+}
+
+
+.myExtension_box .myExtension_list .myExtension_list_item .myExtension_message .name_price .name {
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+
+}
+
+.myExtension_box .myExtension_list .myExtension_list_item .myExtension_message .name_price .price {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #488FF1;
+    line-height:0.22rem;
+
+}
+.myExtension_box .myExtension_list .myExtension_list_item .myExtension_message .type_data .type {
+    font-size:0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+
+}
+
+.myExtension_box .myExtension_list .myExtension_list_item .myExtension_message .type_data .data {
+    font-size:0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+
+
+}
+
+
+.myExtension_total_box {
+    height: 0.8rem;
+    background-image: url("../images/myExtension_title.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0.15rem;
+    border-radius: 0.03rem;
+    box-sizing: border-box;
+    padding: 0.15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.myExtension_total_box .title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myExtension_total_box .title_box .title{
+    font-size: 0.16rem;
+    font-weight: 400;
+    color: #333333;
+    line-height:0.22rem;
+
+}
+
+
+.myExtension_total_box .title_box .myExtension_price{
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #FC302C;
+    line-height: 0.28rem;
+
+
+}
+
+.myExtension_total_box .myExtension_count {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+
+}
+
+.myExtension_total_box .myExtension_count .count_value{
+   color: rgba(252, 48, 44, 1);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
