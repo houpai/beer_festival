@@ -371,6 +371,10 @@
     display: flex;
     align-items: center;
     padding: 0.15rem;
+    background-image: url("../images/hand.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 0.58rem 0.76rem;
 }
 
 .list_box .list_item_box .list_item .message_box .left{

@@ -1,0 +1,271 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: #fff;
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.iconfont {
+    color: #333;
+    font-size: 0.28rem !important;
+}
+
+
+.exchangeDetail_container {
+    box-sizing: border-box;
+    padding: 0.6rem 0.15rem 1.2rem 0.15rem;
+}
+
+.exchangeDetail_container .product_detail_box {
+    background: #FFFFFF;
+    border-radius: 0.03rem;
+    box-sizing: border-box;
+    padding: 0.15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.exchangeDetail_container .product_detail_box .product_message_box {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 0.14rem;
+}
+
+.exchangeDetail_container .product_detail_box .product_message_box .product_img{
+     flex-shrink: 0;
+     display: block;
+     width: 0.67rem;
+     height: 0.9rem;
+     margin-right: 0.15rem;
+ }
+
+.exchangeDetail_container .product_detail_box .product_message_box .product_message{
+    flex: 1;
+    width: 0;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exchangeDetail_container .product_detail_box .product_message_box .product_message .product_name{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin: 0.12rem 0 0 0;
+
+}
+
+.exchangeDetail_container .product_detail_box .product_message_box .product_message .price_number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 0.12rem 0;
+}
+
+.exchangeDetail_container .product_detail_box .product_message_box .product_message .price_number .price{
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #FC302C;
+    line-height: 0.25rem;
+
+}
+
+
+.exchangeDetail_container .product_detail_box .product_message_box .product_message .price_number .number{
+    font-size:0.16rem;
+    font-weight: 400;
+    color: #333333;
+    line-height:0.22rem;
+}
+
+
+.exchangeDetail_container .product_detail_box .exchange_tip {
+    display: flex;
+    align-items: center;
+    margin: 0.14rem 0 0 0;
+}
+
+.exchangeDetail_container .product_detail_box .exchange_tip img {
+    display: block;
+    width: 0.14rem;
+    height: 0.14rem;
+    margin-right: 0.08rem;
+}
+
+.exchangeDetail_container .product_detail_box .exchange_tip span {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.2rem;
+
+}
+
+
+.recharge_box {
+    margin: 0.2rem 0;
+    box-sizing: border-box;
+    height:1.17rem;
+    background: #FFFFFF;
+    border-radius: 0.03rem;
+    padding: 0.15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.recharge_box .box_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.15rem;
+
+}
+
+.recharge_box input {
+    outline: none;
+    height: 0.5rem;
+    background: #F2F2F2;
+    border-radius: 0.03rem;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0 0.12rem;
+
+    font-size: 0.14rem;
+    font-weight: 400;
+    line-height: 0.2rem;
+
+}
+
+.recharge_box input:focus {
+    outline: none;
+    border: 0;
+}
+
+.desc_box {
+    box-sizing: border-box;
+    padding: 0.15rem;
+    background: #fff;
+    border-radius: 0.03rem;
+}
+
+.desc_box .box_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.15rem;
+}
+
+.desc_box .desc {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+
+}
+
+
+.fixed_box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.15rem 0.15rem 0.3rem 0.15rem;
+    z-index: 10;
+    background-color: rgba(242, 242, 242, 1);
+    box-sizing: border-box;
+}
+
+.fixed_box .pay_box {
+    display: flex;
+    height: 0.44rem;
+    border-radius: 0.03rem;
+    overflow: hidden;
+}
+
+.fixed_box .pay_box .left {
+    height: 100%;
+    flex: 1;
+    width: 0;
+    flex-shrink: 0;
+    background-color: rgba(52, 53, 54, 1);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0.15rem;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+
+}
+
+.fixed_box .pay_box .right {
+    flex-shrink: 0;
+    width: 0.98rem;
+    background: #488FF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
