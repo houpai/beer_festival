@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>我的账单</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/bill.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.2.3.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.0.1/echarts.min.js"></script>
+</head>
+<body>
+<div class="header">
+  <div class="left">
+    <i class="iconfont icon-left"></i>
+  </div>
+  <div class="middle">我的账单</div>
+  <div class="right"></div>
+</div>
+
+<div class="bill_container">
+  <div class="top_bg_box">
+    <div class="action_box">
+      <div class="date_select">
+        <span>2020-09</span>
+        <img src="../images/select.png" alt="">
+      </div>
+
+      <div class="btn_box">
+        <div class="btn all_btn active_btn">全部</div>
+        <div class="btn income_btn">收入</div>
+        <div class="btn pay_btn">支出</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chart_box" id="chartBox"></div>
+
+  <div class="bill_list_box">
+    <div class="box_title">账单明细</div>
+
+    <ul class="bill_list">
+      <li class="bill_item">
+        <div class="img_box">
+          <img src="../images/give.png" alt="" class="bill_img">
+        </div>
+        <div class="bill_message_box">
+          <div class="detail">
+            <div class="bill_title">转增给某某</div>
+            <div class="bill_value">-23积分</div>
+          </div>
+          <div class="other">
+            <div class="store_name">体验商家王大力</div>
+            <div class="data">2020-09-09</div>
+          </div>
+        </div>
+      </li>
+
+      <li class="bill_item">
+        <div class="img_box">
+          <img src="../images/give.png" alt="" class="bill_img">
+        </div>
+        <div class="bill_message_box">
+          <div class="detail">
+            <div class="bill_title">某某转增</div>
+            <div class="bill_value get">23积分</div>
+          </div>
+          <div class="other">
+            <div class="store_name">体验商家王大力</div>
+            <div class="data">2020-09-09</div>
+          </div>
+        </div>
+      </li>
+
+      <li class="bill_item">
+        <div class="img_box">
+          <img src="../images/buy.png" alt="" class="bill_img">
+        </div>
+        <div class="bill_message_box">
+          <div class="detail">
+            <div class="bill_title">购买商品</div>
+            <div class="bill_value">-23积分</div>
+          </div>
+          <div class="other">
+            <div class="store_name">体验商家王大力</div>
+            <div class="data">2020-09-09</div>
+          </div>
+        </div>
+      </li>
+
+      <li class="bill_item">
+        <div class="img_box">
+          <img src="../images/recharge.png" alt="" class="bill_img">
+        </div>
+        <div class="bill_message_box">
+          <div class="detail">
+            <div class="bill_title">充值</div>
+            <div class="bill_value get">23积分</div>
+          </div>
+          <div class="other">
+            <div class="store_name">体验商家王大力</div>
+            <div class="data">2020-09-09</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+
+<script type="text/javascript">
+
+  window.onload = function () {
+    //指定图表的配置项和数据
+    let option = {
+      // title: {
+      //   text: '某站点用户访问来源',
+      //   subtext: '纯属虚构',
+      //   left: 'center'
+      // },
+      tooltip: {
+        trigger: "item",
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+      },
+      legend: {
+        orient: "vertical",
+        left: "15px",
+        top: "20px",
+        data: ["收入", "支出"]
+      },
+      series: [
+        {
+          name: "所占比例",
+          type: "pie",
+          radius: "55%",
+          center: ["50%", "60%"],
+          data: [
+            {value: 335, name: "收入"},
+            {value: 310, name: "支出"}
+          ],
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: "rgba(0, 0, 0, 0.5)"
+            }
+          }
+        }
+      ]
+    }
+    let myChart = echarts.init(document.getElementById("chartBox"))
+    myChart.setOption(option)
+  }
+</script>
+</html>

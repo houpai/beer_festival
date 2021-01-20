@@ -1,0 +1,208 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: rgba(236, 244, 254, 1);
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.iconfont {
+    color: #333333;
+    font-size: 0.28rem !important;
+}
+
+
+.bill_container {
+    padding: 0.44rem 0;
+}
+
+.top_bg_box {
+    background-color: rgba(236, 244, 254, 1);
+    height: 1.3rem;
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem;
+    border-radius: 0 0 0.3rem 0.3rem;
+}
+
+.top_bg_box .action_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top_bg_box .action_box .date_select {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.top_bg_box .action_box .date_select img {
+    display: block;
+    width: 0.16rem;
+    height: 0.16rem;
+    margin-left: 0.08rem;
+}
+
+.btn_box {
+    display: flex;
+    align-items: center;
+}
+
+.btn_box .btn {
+    width: 0.44rem;
+    height: 0.2rem;
+    text-align: center;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    margin: 0 0.1rem 0 0;
+
+}
+
+.btn_box .btn.active_btn {
+
+    background: #488FF1;
+    border-radius: 0.1rem;
+    color: #fff;
+
+}
+
+.chart_box {
+    margin: -0.6rem 0.15rem 0.2rem 0.15rem;
+    height: 1.73rem;
+    border-radius: 0.03rem;
+    background-color: #fff;
+}
+
+.bill_list_box {
+    margin: 0.2rem 0.15rem;
+}
+
+.bill_list_box .box_title {
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.25rem;
+    margin-bottom: 0.2rem;
+
+}
+
+.bill_list_box .bill_list {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0.03rem;
+}
+
+.bill_list_box .bill_list .bill_item {
+    box-sizing: border-box;
+    padding: 0.15rem 0.15rem 0 0.15rem;
+    display: flex;
+    align-items: center;
+}
+
+.bill_list_box .bill_list .bill_item .bill_img {
+    display: block;
+    width: 0.48rem;
+    height: 0.48rem;
+}
+
+.bill_list_box .bill_list .bill_item .img_box {
+    padding-bottom: 0.15rem;
+    width: 0.48rem;
+    height: 0.48rem;
+    flex-shrink: 0;
+    margin-right: 0.15rem;
+}
+
+
+.bill_list_box .bill_list .bill_item .bill_message_box {
+    flex: 1;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bill_list_box .bill_list .bill_item .bill_message_box .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.05rem;
+}
+
+.bill_list_box .bill_list .bill_item .bill_message_box .detail .bill_title {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+
+}
+
+.bill_list_box .bill_list .bill_item .bill_message_box .detail .bill_value {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.bill_list_box .bill_list .bill_item .bill_message_box .detail .bill_value.get {
+    color: rgba(72, 143, 241, 1) !important;
+}
+
+
+.bill_list_box .bill_list .bill_item .bill_message_box .other {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.05rem;
+
+
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+
+}
+
+
