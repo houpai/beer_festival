@@ -47,7 +47,7 @@
 
 .exchangeDetail_container {
     box-sizing: border-box;
-    padding: 0.6rem 0.15rem;
+    padding: 0.6rem 0.15rem 1.2rem 0.15rem;
 }
 
 .exchangeDetail_container .product_detail_box {
@@ -198,6 +198,55 @@
     color: #333333;
     line-height: 0.2rem;
 
+}
+
+
+.fixed_box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.15rem 0.15rem 0.3rem 0.15rem;
+    z-index: 10;
+    background-color: rgba(242, 242, 242, 1);
+    box-sizing: border-box;
+}
+
+.fixed_box .pay_box {
+    display: flex;
+    height: 0.44rem;
+    border-radius: 0.03rem;
+    overflow: hidden;
+}
+
+.fixed_box .pay_box .left {
+    height: 100%;
+    flex: 1;
+    width: 0;
+    flex-shrink: 0;
+    background-color: rgba(52, 53, 54, 1);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0.15rem;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+
+}
+
+.fixed_box .pay_box .right {
+    flex-shrink: 0;
+    width: 0.98rem;
+    background: #488FF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
 }
 
 
