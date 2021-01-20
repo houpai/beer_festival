@@ -44,9 +44,16 @@
     font-size: 0.28rem !important;
 }
 
+html,body {
+    height: 100%!important;
+}
 
 .bill_container {
-    padding: 0.44rem 0;
+    padding: 0.44rem 0 0.22rem 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
 }
 
 .top_bg_box {
@@ -113,22 +120,68 @@
 }
 
 .bill_list_box {
-    margin: 0.2rem 0.15rem;
+    margin: 0.2rem 0.1rem;
+    flex: 1;
+    height: 0;
+    overflow: auto;
+    padding: 0 0 0.2rem 0;
 }
 
-.bill_list_box .box_title {
+
+
+.bill_list_box::-webkit-scrollbar {
+
+     width: 2px;
+
+     height: 8px;
+
+     -webkit-border-radius: 5px;
+
+     -moz-border-radius: 5px;
+
+     border-radius: 5px;
+
+     border: 1px solid rgba(0, 0, 0, 0.1);
+
+ }
+
+.bill_list_box::-webkit-scrollbar-thumb {
+
+     background-color: #ffffff;
+
+     background-clip: padding-box;
+
+     -webkit-border-radius: 5px;
+
+     -moz-border-radius: 5px;
+
+     min-height: 8px;
+
+ }
+
+
+
+
+ .box_title {
     font-size: 0.18rem;
     font-weight: bold;
     color: #333333;
     line-height: 0.25rem;
-    margin-bottom: 0.2rem;
+    margin:0 0 0 0.15rem;
+
+
 
 }
+
+
+
+
 
 .bill_list_box .bill_list {
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
     border-radius: 0.03rem;
+    margin: 0 0.05rem;
 }
 
 .bill_list_box .bill_list .bill_item {
@@ -162,6 +215,11 @@
 
     padding-bottom: 0.15rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bill_list_box .bill_list .bill_item .bill_message_box.noBorder {
+
+    border-bottom: 0;
 }
 
 .bill_list_box .bill_list .bill_item .bill_message_box .detail {
