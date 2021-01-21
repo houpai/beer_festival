@@ -1,0 +1,239 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: #ECF4FE;
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.iconfont {
+    color: #333;
+    font-size: 0.28rem !important;
+}
+
+.recharge_container {
+    padding: 0.44rem 0 0.22rem 0;
+}
+
+.recharge_container .top_bg {
+    height: 1.65rem;
+    background-color: #ECF4FE;
+    border-radius:  0 0 0.3rem 0.3rem;
+}
+
+.recharge_container .recharge_box {
+    margin: -1.52rem 0.15rem 0.3rem 0.15rem;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 0.2rem 0.15rem;
+    box-sizing: border-box;
+}
+
+.recharge_container .recharge_box .recharge_title{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.15rem;
+}
+.recharge_container .recharge_box .card_container{
+   height: 1.16rem;
+    background-color: #A60100;
+    border-radius: 0.03rem;
+    box-sizing: border-box;
+    padding: 0.15rem 0.15rem 0.08rem 0.15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recharge_container .recharge_box .card_container .balance_box{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.17rem;
+
+}
+
+.recharge_container .recharge_box .card_container .balance_box .balance{
+    font-size: 0.16rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+
+}
+
+.recharge_container .recharge_box .card_container .card_type_box{
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.2rem;
+
+}
+
+.recharge_container .recharge_box .card_container .card_type_box  .card_num{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.17rem;
+    margin-top: 0.04rem;
+
+
+}
+
+
+.recharge_container .recharge_box  .recharge_input_box {
+    margin:0.4rem 0 0 0;
+}
+
+.recharge_container .recharge_box  .recharge_input_box .recharge_input_title{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.15rem;
+
+}
+
+.recharge_container .recharge_box  .recharge_input_box .input_box{
+    display: flex;
+    align-items: center;
+
+
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #333333;
+    line-height:0.25rem;
+
+}
+
+.recharge_container .recharge_box  .recharge_input_box .input_box .recharge_input {
+    display: block;
+    flex: 1;
+    width: 0;
+    height: 0.44rem;
+    box-sizing: border-box;
+    margin-left: 0.15rem;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.18rem;
+    font-weight: bold;
+    line-height: 0.25rem;
+    outline: none;
+}
+
+.recharge_container .recharge_box  .recharge_input_box .recharge_tip {
+    margin: 0.15rem 0 0 0.24rem;
+
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+
+
+}
+
+.recharge_container .recharge_box  .recharge_input_box .submit_btn {
+    height: 0.44rem;
+    background: #488FF1;
+    border-radius: 0.03rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+    margin:0.6rem 0 0 0;
+
+
+
+}
+
+.recharge_container .openCard_box {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0.03rem;
+    box-sizing: border-box;
+    padding: 0.15rem 0.1rem;
+    margin: 0 0.15rem 0.15rem 0.15rem;
+
+}
+
+.recharge_container .openCard_box .open_card {
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+}
+
+.recharge_container .openCard_box .right_icon {
+    display: block;
+    width: 0.16rem;
+    height: 0.16rem;
+}
+
+.recharge_container .openCard_box .desc_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 0;
+    margin: 0 0.1rem;
+
+}
+
+.recharge_container .openCard_box .desc_box .desc{
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+    margin-bottom: 0.08rem;
+}
+
+.recharge_container .openCard_box .desc_box .sub_desc{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+
+}
+
+
+
+
