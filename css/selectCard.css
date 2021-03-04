@@ -45,12 +45,13 @@
 }
 
 .selectCard_container {
-    padding: 0.44rem 0;
+    padding: 0.56rem 0;
 }
 
 .selectCard_container .card_list {
     /*margin: 0 0.15rem;*/
     /*padding: 0.15rem 0;*/
+    margin-bottom: 0.16rem;
 }
 
 
@@ -115,41 +116,25 @@
     width: 0;
     flex-shrink: 0;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.selectCard_container .card_list .card_item_box .right_container .jifen{
     font-size: 0.2rem;
     font-weight: 400;
     color: #FFFFFF;
     line-height: 0.28rem;
 }
-
-.selectCard_container .card_list .card_item .card_name_price {
-    box-shadow: 0px -2px 4px 0px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    padding: 0.12rem 0.15rem 0.12rem 0.12rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.selectCard_container .card_list .card_item .card_name_price .card_name {
-    font-size: 0.14rem;
+.selectCard_container .card_list .card_item_box .right_container .price{
+    font-size: 0.16rem;
     font-weight: 400;
-    color: #333333;
-    line-height: 0.2rem;
-    display: flex;
-    align-items: center;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+
 }
-
-
-
-.selectCard_container .card_list .card_item .card_name_price .card_price {
-    font-size: 0.14rem;
-    font-weight: 400;
-    color: #F15948;
-    line-height: 0.2rem;
-}
-
 
 .dialog_mask {
     position: fixed;
@@ -201,38 +186,63 @@
     font-weight: bold;
     color: #F15948;
     line-height: 0.22rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 
 }
 
-.dialog_mask .confirm_dialog .btn_box {
+.dialog_mask .confirm_dialog .gong_pay {
     display: flex;
     align-items: center;
-}
-
-.dialog_mask .confirm_dialog .btn_box .btn {
-   box-sizing: border-box;
-    width: 0.86rem;
-    height: 0.28rem;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    width: 1.87rem;
+    height: 0.36rem;
+    box-sizing: border-box;
+    border-radius: 0.03rem;
+    border: 1px solid #488FF1;
 
     font-size: 0.14rem;
     font-weight: 400;
     color: #488FF1;
+    margin-bottom: 0.16rem;
+
+}
+
+.dialog_mask .confirm_dialog .gong_pay img{
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-right: 0.08rem;
+}
+
+.dialog_mask .confirm_dialog .wei_pay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.87rem;
+    height: 0.36rem;
+    box-sizing: border-box;
     border-radius: 0.03rem;
-    margin: 0 0.08rem;
+    border: 1px solid rgba(80, 182, 116, 1);
+
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: rgba(80, 182, 116, 1);
 
 }
 
-.dialog_mask .confirm_dialog .btn_box .btn.cancel_btn {
-    color: rgba(72, 143, 241, 1);
-    border: 1px solid #488FF1;
-    background-color: #fff;
+.dialog_mask .confirm_dialog .wei_pay img{
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    margin-right: 0.08rem;
 }
 
-.dialog_mask .confirm_dialog .btn_box .btn.pay_btn {
-    color: #fff;
-    background: #488FF1;
+.dialog_mask .confirm_dialog  .cancel_btn {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #488FF1;
+    line-height: 0.2rem;
+    text-decoration: underline;
+    margin-top: 0.16rem;
+
 }
