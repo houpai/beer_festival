@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+    <list default="true" id="ea97bb4d-f503-41d1-9c41-672d2ed86a7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/identity_boss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/identity_business.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/identity_shareholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/identity_staff.png" afterDir="false" />
     <list default="true" id="c67cb60b-d1c9-410d-8571-2c8cde7417a6" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/html/cdKey.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/beer_festival.iml" beforeDir="false" />
@@ -232,6 +237,13 @@
       <workItem from="1611105651707" duration="5930000" />
       <workItem from="1611111644608" duration="9000" />
       <workItem from="1611119692272" duration="845000" />
+      <updated>1610397242588</updated>
+      <workItem from="1610397243687" duration="7676000" />
+      <workItem from="1610621661048" duration="8299000" />
+      <workItem from="1610892257508" duration="2352000" />
+      <workItem from="1610969942929" duration="18000" />
+      <workItem from="1611063118877" duration="2903000" />
+      <workItem from="1611147180204" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1605769346118</created>
@@ -269,6 +281,21 @@
       <updated>1611111603306</updated>
     </task>
     <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00005" summary=".">
+      <created>1611069019874</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611069019874</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".">
+      <created>1611069096585</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611069096585</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
