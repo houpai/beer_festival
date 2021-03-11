@@ -207,6 +207,72 @@ body .flex_box{
     line-height: 0.17rem;
 }
 
+/*3.10新增*/
+.top_box  .date_select {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0.2rem 0.15rem 0 0.15rem;
+
+}
+
+.top_box  .date_select img {
+    display: block;
+    width: 0.16rem;
+    height: 0.16rem;
+    margin-left: 0.08rem;
+}
+
+.give_container .top_box {
+    height: 1.1rem;
+}
+
+.list_box .list_item .right_box .time .date{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+}
+
+
+.list_box .list_item .right_box .bottom {
+    margin: 0.04em 0!important;
+}
+
+.list_box .list_item .right_box .top {
+  margin: 0!important;
+}
+
+.list_box .list_item .right_box .time {
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 0.18rem;
+}
+
+.list_box .list_item .right_box .time .delete_btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.list_box .list_item .right_box .time .delete_btn span{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.18rem;
+}
+
+.list_box .list_item .right_box .time .delete_btn img{
+    display: block;
+    width: 0.14rem;
+    height: 0.12rem;
+    margin-right: 0.04rem;
+}
 
 
 
