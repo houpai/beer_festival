@@ -1,0 +1,372 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.iconfont {
+    color: #333333;
+    font-size: 0.28rem !important;
+}
+
+.top_bg {
+    height: 0.8rem;
+    background-image: url("../images/topBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.store_container {
+    flex: 1;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.page_footer {
+    height: 0.92rem;
+    background: #fff;
+}
+
+.page_footer .pay_box {
+    height: 0.44rem;
+    background: #fff;
+    margin: 0.08rem 0.15rem 0 0.15rem;
+    display: flex;
+    align-items: center;
+}
+
+.page_footer .pay_box .pay_btn {
+    height: 0.44rem;
+    width: 0.98rem;
+    background-color: rgba(72, 143, 241, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 0 0.03rem 0.03rem 0;
+}
+
+.page_footer .pay_box .pay_message {
+    height: 0.44rem;
+    flex: 1;
+    width: 0;
+    background-color: rgba(52, 53, 54, 1);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0.15rem;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 0.03rem 0 0 0.03rem;
+}
+
+.store_message_box {
+    height: 1rem;
+    box-sizing: border-box;
+    padding: 0.15rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.03rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.store_message_box .store_img_box {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.store_message_box .store_img_box img {
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+.store_message_box .message_detail {
+    flex: 1;
+    width: 0;
+    box-sizing: border-box;
+    margin-left: 0.15rem;
+}
+
+.store_message_box .message_detail .store_name {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.store_message_box .message_detail .type_address {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0.06rem 0;
+}
+
+.store_message_box .message_detail .pay_type_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.store_message_box .message_detail .pay_type_box .sale_num {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+}
+
+
+.store_message_box .message_detail .pay_type_box .type {
+    display: flex;
+    align-items: center;
+}
+
+
+.store_message_box .message_detail .pay_type_box .type .type_item {
+    display: flex;
+    align-items: center;
+    width: 0.6rem;
+    padding: 0.02rem 0;
+    text-align: center;
+    font-size: 0.12rem;
+    line-height: 0.17rem;
+    font-weight: 400;
+    justify-content: center;
+    border-radius: 0.03rem;
+
+
+}
+
+.store_message_box .message_detail .pay_type_box .type .type_item.gong {
+    color: #FC302C;
+    background-color: rgba(252, 48, 44, 0.1);
+    border: 1px solid #FC302C;
+    margin-right: 0.04rem;
+}
+
+.store_message_box .message_detail .pay_type_box .type .type_item.ji {
+    color: rgba(252, 162, 44, 1);
+    background-color: rgba(252, 162, 44, 0.1);
+    border: 1px solid rgba(252, 162, 44, 1);
+}
+
+.store_container .select_box {
+    flex: 1;
+    height: 0;
+    display: flex;
+}
+
+.store_container .select_box .goods_type_list {
+    width: 0.86rem;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.store_container .select_box .goods_type_list::-webkit-scrollbar {
+    display: none;
+}
+
+.store_container .select_box .goods_type_list .type_item{
+    height: 0.5rem;
+    box-sizing: border-box;
+    padding: 0.12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    background-color:rgba(242, 242, 242, 1);
+}
+
+.store_container .select_box .goods_type_list .type_item.checked{
+    background-color: #fff!important;
+}
+
+
+.store_container .select_box .good_list{
+    flex: 1;
+    width: 0;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.store_container .select_box .good_list::-webkit-scrollbar{
+    display: none;
+}
+
+.store_container .select_box .good_list .goods_item{
+    box-sizing: border-box;
+    display: flex;
+    /*align-items: center;*/
+    padding: 0.15rem;
+}
+
+.store_container .select_box .good_list .goods_item .goods_img_box{
+    width: 0.78rem;
+    height: 0.78rem;
+}
+.store_container .select_box .good_list .goods_item .goods_img_box img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box{
+    flex: 1;
+    width: 0;
+    margin-left: 0.15rem;
+    box-sizing: border-box;
+    padding:0 0 0.15rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box .goods_name{
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.store_container .select_box .good_list .goods_item .goods_message_box .sale_stock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.06rem 0;
+}
+
+
+.store_container .select_box .good_list .goods_item .goods_message_box .sale_stock .number{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box .sale_stock .stock{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FCA22C;
+    line-height: 0.17rem;
+}
+
+
+.store_container .select_box .good_list .goods_item .goods_message_box  .action_box  {
+    display: flex;
+    align-items: center;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box  .action_box .price_box .current_price{
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #FC302C;
+    line-height: 0.2rem;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box  .action_box .price_box {
+    display: flex;
+    align-items: center;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box  .action_box .price_box .price{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+    text-decoration: line-through;
+    margin-left: 0.08rem;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box  .action_box .btn_box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    width: 0;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box  .action_box .btn_box img{
+    display: block;
+    width: 0.18rem;
+    height: 0.18rem;
+}
+
+.store_container .select_box .good_list .goods_item .goods_message_box  .action_box .btn_box .buy_number{
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    margin: 0 0.06rem;
+}
+
+
+
+
+
+
+
