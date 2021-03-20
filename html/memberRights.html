@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的账单</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/memberRights.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+    <script src="../js/fontsize.js"></script>
+    <script src="../js/jquery-1.2.3.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="left">
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="middle">我的账单</div>
+    <div class="right"></div>
+</div>
+
+<div class="memberRights_container">
+    <div class="swiperList_box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+
+                    <div class="slide_box">
+                        <img src="../images/icon_prize3.png" alt="">
+                        <div class="right_message">
+                            <p class="prize_name">每月礼包</p>
+                            <p class="prize_sub_name">免费领取每月超值福利</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="slide_box">
+                        <img src="../images/icon_prize3.png" alt="">
+                        <div class="right_message">
+                            <p class="prize_name">每月礼包</p>
+                            <p class="prize_sub_name">免费领取每月超值福利</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="slide_box">
+                        <img src="../images/icon_prize3.png" alt="">
+                        <div class="right_message">
+                            <p class="prize_name">每月礼包</p>
+                            <p class="prize_sub_name">免费领取每月超值福利</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tip_flex_box">
+        <p class="title">权益特权</p>
+        <div class="tip_btn">
+            <img src="../images/tip.png" alt="">
+            <span>权益说明</span>
+        </div>
+    </div>
+
+    <div class="sub_tip">
+        更多特权解锁更多权益
+    </div>
+
+    <div class="rights_list">
+        <div class="rights_item">
+            <div class="img_box">
+                <img src="../images/activity_product1.png" alt="">
+            </div>
+            <div class="message_box">
+                <p class="name">携程旅行100元代金券</p>
+                <p class="count">无限次</p>
+            </div>
+        </div>
+
+        <div class="rights_item">
+            <div class="img_box">
+                <img src="../images/activity_product1.png" alt="">
+            </div>
+            <div class="message_box">
+                <p class="name">携程旅行100元代金券</p>
+                <p class="count">无限次</p>
+            </div>
+        </div>
+
+        <div class="rights_item">
+            <div class="img_box">
+                <img src="../images/activity_product1.png" alt="">
+            </div>
+            <div class="message_box">
+                <p class="name">携程旅行100元代金券</p>
+                <p class="count">无限次</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        loop: true,
+        slidesPerView: 1.4,
+        centeredSlides: true,
+        coverflowEffect: {
+            rotate: 30,
+            stretch: 10,
+            depth: 60,
+            modifier: 2,
+            slideShadows: false
+        },
+    })
+</script>
+
+</html>
