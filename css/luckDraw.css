@@ -1,0 +1,225 @@
+/*header部分样式*/
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    height: 0.44rem;
+    background: #fff;
+}
+
+.header .left {
+    width: 0.36rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .right {
+    width: 0.36rem;
+    height: 100%;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.header .middle {
+    flex: 1;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.iconfont {
+    color: #333333;
+    font-size: 0.28rem !important;
+}
+
+html,body {
+    height: 100%;
+    background: #FFFFFF;
+}
+
+.luckDraw_container {
+    padding: 0.2rem 0;
+}
+
+.top_img_box img{
+    display: block;
+    width: 1.51rem;
+    height: 0.24rem;
+    margin-left: 0.15rem;
+}
+
+.text_tip1 {
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.28rem;
+    text-align: center;
+    margin: 0.48rem 0 0.08rem 0;
+}
+
+.text_tip2 {
+    font-size: 0.28rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.4rem;
+    text-align: center;
+    margin-bottom: 0.15rem;
+}
+
+.animation_box {
+    height: 1.96rem;
+}
+
+.luckDraw_btn_box {
+    height: 1.27rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  #E4E4E4;
+}
+
+.luckDraw_btn_box .luckDraw_tip {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #333333;
+    line-height:0.17rem;
+    margin-bottom: 0.15rem;
+}
+
+.luckDraw_btn_box .luckDraw_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.96rem;
+    height: 0.35rem;
+    background: #488FF1;
+    border-radius: 0.03rem;
+
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+}
+
+.aqy_box {
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+}
+
+.aqy_box img{
+    display: block;
+    width: 100%;
+}
+
+.lucky_list {
+    box-sizing: border-box;
+    padding: 0.3rem 0.15rem;
+}
+
+.lucky_list .lucky_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+
+.lucky_list .lucky_title .line {
+     flex: 1;
+     border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+ }
+
+.lucky_list .lucky_title span {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    margin: 0 0.1rem;
+}
+
+.lucky_list_item {
+    display: flex;
+    margin:  0 0 0.2rem 0;
+}
+
+.lucky_list_item .middle{
+    flex: 1;
+    width: 0;
+    margin:0 0.1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lucky_list_item .middle p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.lucky_list_item .middle .name{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+}
+
+.lucky_list_item .middle .time{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+}
+
+.lucky_list_item .left img {
+    display: block;
+    width: 0.48rem;
+    height: 0.48rem;
+    border-radius: 50%;
+}
+
+.lucky_list_item .right p.detail {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #488FF1;
+    line-height: 0.2rem;
+}
+
+.lucky_list_item .right .flex_p {
+    display: flex;
+    align-items: center;
+}
+
+
+.lucky_list_item .right .flex_p img{
+    display: block;
+    width: 0.14rem;
+    height: 0.14rem;
+}
+
+.lucky_list_item .right .flex_p span{
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FCA22C;
+    line-height: 0.17rem;
+}
+
+.lucky_list_item .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
