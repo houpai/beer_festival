@@ -223,3 +223,101 @@ html,body {
     align-items: flex-end;
     justify-content: space-between;
 }
+
+
+
+.modal_box_hidden {
+    display: none;
+}
+
+.modal_box_show {
+    display: block;
+}
+
+
+
+.modal_box {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_box .dialog {
+    box-sizing: border-box;
+    margin: 1.2rem 0.6rem;
+    padding: 0.2rem;
+    background: #FFFFFF;
+    border-radius: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal_box .dialog .close_dialog_btn {
+    position: absolute;
+    bottom: -0.75rem;
+}
+.modal_box .dialog .close_dialog_btn img{
+    display: block;
+    width: 0.42rem;
+    height: 0.75rem;
+}
+
+.modal_box .dialog .result_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #F2643E;
+    line-height: 0.22rem;
+    margin-bottom: 0.15rem;
+}
+
+.modal_box .dialog .result_img {
+   display: block;
+    width: 1.12rem;
+    height: 0.68rem;
+    margin-bottom: 0.15rem;
+}
+
+.modal_box .dialog .result_tip {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.15rem;
+}
+
+.modal_box .dialog .result_sub_tip {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+    margin-bottom: 0.15rem;
+}
+
+
+
+
+.modal_box .dialog .get_btn {
+    width: 1.62rem;
+    height: 0.36rem;
+    background: #488FF1;
+    border-radius: 0.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.2rem;
+
+}
+
+
+
+

@@ -5,9 +5,9 @@
   <title>抽奖</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/luckDraw.css">
+  <link rel="stylesheet" href="../css/saizi.css">
   <script src="../js/fontsize.js"></script>
   <script src="../js/jquery-1.2.3.min.js"></script>
-  <script src="../js/swiper.min.js"></script>
 </head>
 <body>
   <div class="luckDraw_container">
@@ -22,7 +22,54 @@
     </p>
 
     <div class="animation_box">
-
+      <div id="wrapper">
+        <div id="platform">
+          <div id="dice">
+            <div class="side front">
+              <div class="dot center"></div>
+            </div>
+            <div class="side front inner"></div>
+            <div class="side top">
+              <div class="dot dtop dleft"></div>
+              <div class="dot dbottom dright"></div>
+            </div>
+            <div class="side top inner"></div>
+            <div class="side right">
+              <div class="dot dtop dleft"></div>
+              <div class="dot center"></div>
+              <div class="dot dbottom dright"></div>
+            </div>
+            <div class="side right inner"></div>
+            <div class="side left">
+              <div class="dot dtop dleft"></div>
+              <div class="dot dtop dright"></div>
+              <div class="dot dbottom dleft"></div>
+              <div class="dot dbottom dright"></div>
+            </div>
+            <div class="side left inner"></div>
+            <div class="side bottom">
+              <div class="dot center"></div>
+              <div class="dot dtop dleft"></div>
+              <div class="dot dtop dright"></div>
+              <div class="dot dbottom dleft"></div>
+              <div class="dot dbottom dright"></div>
+            </div>
+            <div class="side bottom inner"></div>
+            <div class="side back">
+              <div class="dot dtop dleft"></div>
+              <div class="dot dtop dright"></div>
+              <div class="dot dbottom dleft"></div>
+              <div class="dot dbottom dright"></div>
+              <div class="dot center dleft"></div>
+              <div class="dot center dright"></div>
+            </div>
+            <div class="side back inner"></div>
+            <div class="side cover x"></div>
+            <div class="side cover y"></div>
+            <div class="side cover z"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="luckDraw_btn_box">
@@ -82,5 +129,42 @@
     </div>
 
   </div>
+
+
+
+  <div class="modal_box">
+    <div class="dialog">
+      <p class="result_title">恭喜你抽取</p>
+      <img src="../images/result.png" alt="" class="result_img">
+      <p class="result_tip">白金卡5万额度</p>
+      <p class="result_sub_tip">
+        说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明说明
+      </p>
+
+      <div class="get_btn">去领奖</div>
+      
+      <div class="close_dialog_btn">
+        <img src="../images/dialog_close.png" alt="">
+      </div>
+    </div>
+  </div>
 </body>
+
+<script>
+
+  $(document).ready(function(){
+    $('.luckDraw_btn').click(function () {
+      $('#dice').removeClass('luckDraw_paused').addClass('luckDraw_begin');
+      setTimeout(function (){
+        $('#dice').addClass('luckDraw_paused');
+      },2500)
+    })
+  });
+
+
+
+
+</script>
+
+
 </html>
