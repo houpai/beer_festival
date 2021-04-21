@@ -1,0 +1,303 @@
+
+body, html {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.guess_container {
+    padding-bottom: 1.1rem;
+}
+
+.guess_container .top_banner_box {
+    width: 100%;
+    height: 1.86rem;
+}
+
+.guess_container .top_banner_box img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.guess_container .top_desc_box {
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem;
+    background-color: #fff;
+}
+
+.guess_container .top_desc_box .desc_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+}
+
+.guess_container .top_desc_box .desc_sub_title {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+    margin: 0.15rem 0 0 0;
+}
+
+.guess_container .balance_box {
+    box-sizing: border-box;
+    margin: 0.15rem 0;
+    background-color: #fff;
+    padding: 0.2rem 0.15rem;
+}
+
+.guess_container .balance_box .balance_box_bg {
+    height: 0.72rem;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("../images/balance_box_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0.28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guess_container .balance_box .balance_detail {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.2rem;
+}
+
+.balance_detail .big {
+    font-size: 0.18rem;
+    line-height: 0.24rem;
+}
+
+.guess_container .balance_box .balance_detail_desc {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.17rem;
+    margin: 0.08rem 0 0 0;
+}
+
+.guess_container .balance_box .balance_detail_desc .exchange_btn {
+    background: #F1AD09;
+    border-radius: 0.03rem;
+    padding: 0.02rem 0.04rem;
+    margin-left: 0.15rem;
+}
+
+.guess_box {
+
+}
+
+.guess_box_top {
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.guess_box .guess_box_top_title_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.guess_box .guess_box_top_title_box h4 {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+}
+
+.guess_box .guess_box_top_title_box .rank_btn_box {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #666666;
+    line-height: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.rank_btn_box .right_img {
+    display: block;
+    width: 0.14rem;
+    height: 0.14rem;
+}
+
+
+.fixed_box {
+    position: fixed;
+    height: 1.03rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fixed_box .guess_btn {
+    width: 100%;
+    height: 0.5rem;
+    background: #488FF1;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rank_btn_box .rank_img {
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+}
+
+.rank_btn_box span {
+    margin: 0 0 0 0.06rem;
+}
+
+
+.guess_box_top_desc {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+    margin: 0.08rem 0 0.15rem 0;
+}
+
+.gongjuan_btn_box {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+.gongjuan_btn_box::-webkit-scrollbar {
+    display: none;
+}
+
+.gongjuan_btn_box .btn {
+    flex-shrink: 0;
+    width: 0.8rem;
+    height: 0.28rem;
+    background: #F2F2F2;
+    border-radius: 0.03rem;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    display: flex;justify-content: center;
+    align-items: center;
+    margin-right: 0.15rem;
+}
+
+.gongjuan_btn_box .btn.active_btn {
+    color: rgba(72, 143, 241, 1);
+    background-color: rgba(72, 143, 241, .2);
+}
+
+
+.guess_box_middle {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0.15rem;
+}
+
+.guess_box_middle  .guess_box_middle_desc {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.17rem;
+}
+
+
+.guess_box_middle .swiper_box {
+    height: 1.38rem;
+    overflow: hidden;
+}
+.guess_box_middle .swiper_box .swiper_item{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.guess_box_middle .swiper_box .swiper_item .swiper_item_right{
+    width: 0.68rem;
+    height: 0.27rem;
+    background: #488FF1;
+    border-radius: 0.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.2rem;
+}
+
+.guess_box_middle .swiper_box .swiper_item  .swiper_item_left {
+    display: flex;
+    align-items: center;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.guess_box_middle .swiper_box .swiper_item  .swiper_item_left img{
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    padding: 0.15rem 0;
+    margin-right: 0.1rem;
+}
+
+.viewAll_btn_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.2rem 0 0 0;
+}
+
+.viewAll_btn_box .all_btn {
+    width: 1.24rem;
+    height: 0.3rem;
+    border-radius: 0.03rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.guess_box_bootom {
+    background-color: #fff;
+    margin: 0.15rem 0 0 0;
+}
+.guess_box_bootom .desc_box {
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem;
+}
+
+.guess_box_bootom .desc_box h4 {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+}
+
+.guess_box_bootom .desc_box p {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.2rem;
+    margin: 0.15rem 0 0 0;
+}
