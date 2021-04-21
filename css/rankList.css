@@ -1,0 +1,126 @@
+
+html, body {
+    height: 100%;
+    background-color: #fff;
+}
+
+.rankList_container {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.rankList_container .top_box {
+    height: 1.32rem;
+    background: linear-gradient(180deg, #87A7FD 0%, #FB4F9F 100%);
+}
+
+.rankList_container .top_box .top_box_container {
+    height: 100%;
+    padding: 0.2rem 0.15rem;
+    background-image: url("../images/rankList.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 1.44rem 1rem;
+    box-sizing: border-box;
+}
+
+.rankList_container .top_box .top_box_container .title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+    margin-bottom: 0.1rem;
+}
+
+.rankList_container .top_box .top_box_container .sub_title {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.17rem;
+}
+
+.time_check {
+    box-sizing: border-box;
+    padding: 0.15rem;
+}
+
+.time_check .date {
+    font-size: 0.14rem;
+    font-weight: bolder;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.rankList_container .list_box {
+    flex: 1;
+    height: 0;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 0 0.15rem 0.15rem 0.15rem;
+}
+
+.rankList_container .list_box::-webkit-scrollbar {
+    display: none;
+}
+
+.rankList_container .list_box .list_item {
+    display: flex;
+    align-items: center;
+    height: 0.65rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.rankList_container .list_box .list_item .left_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    width: 0;
+}
+
+.rankList_container .list_box .list_item .left_container .index_box {
+    font-size: 0.12rem;
+    font-weight: 700;
+    color: #333333;
+    line-height: 0.17rem;
+}
+
+.rankList_container .list_box .list_item .left_container .index_box img {
+    display: block;
+    width: 0.18rem;
+    height: 0.24rem;
+}
+
+.rankList_container .list_box .list_item .left_container .user img {
+    display: block;
+    width: 0.36rem;
+    height: 0.36rem;
+    margin: 0 0.12rem;
+}
+
+.rankList_container .list_box .list_item .left_container .name {
+    font-size: 0.14rem;
+    font-weight: 700    ;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.rankList_container .list_box .list_item .right_container {
+    font-size: 0.12rem;
+    font-weight: 700;
+    color: #4285EA;
+    line-height: 0.17rem;
+}
+
+.index_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0.18rem;
+    font-size: 0.14rem;
+    font-weight: 700    ;
+    color: #333333;
+}

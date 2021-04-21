@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/rankList.css">
+    <script src="../js/fontsize.js"></script>
+    <script src="../js/jquery-1.2.3.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/datePicker.js"></script>
+</head>
+<body>
+<div class="rankList_container">
+    <div class="top_box">
+        <div class="top_box_container">
+            <p class="title">猜丁壳排行榜</p>
+            <p class="sub_title">看看自己的排名吧</p>
+        </div>
+    </div>
+
+    <div class="time_check time">
+        <div class="date_select date" id="date_select">2020-09-09</div>
+    </div>
+
+    <div class="list_box">
+        <div class="list_item">
+            <div class="left_container">
+                <div class="index_box">
+                    <img src="../images/index_1.png" alt="">
+                </div>
+                <div class="user">
+                    <img src="../images/icon_customer.png" alt="">
+                </div>
+                <div class="name">慕容礼</div>
+            </div>
+            <div class="right_container">
+                已获得999工券
+            </div>
+        </div>
+        <div class="list_item">
+            <div class="left_container">
+                <div class="index_box">
+                    <img src="../images/index_2.png" alt="">
+                </div>
+                <div class="user">
+                    <img src="../images/icon_customer.png" alt="">
+                </div>
+                <div class="name">慕容礼</div>
+            </div>
+            <div class="right_container">
+                已获得999工券
+            </div>
+        </div>
+        <div class="list_item">
+            <div class="left_container">
+                <div class="index_box">
+                    <img src="../images/index_3.png" alt="">
+                </div>
+                <div class="user">
+                    <img src="../images/icon_customer.png" alt="">
+                </div>
+                <div class="name">慕容礼</div>
+            </div>
+            <div class="right_container">
+                已获得999工券
+            </div>
+        </div>
+        <div class="list_item">
+            <div class="left_container">
+                <div class="index_box">
+                    <div class="index_div">4</div>
+                </div>
+                <div class="user">
+                    <img src="../images/icon_customer.png" alt="">
+                </div>
+                <div class="name">慕容礼</div>
+            </div>
+            <div class="right_container">
+                已获得999工券
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    let calendar = new datePicker()
+    calendar.init({
+        "trigger": "#date_select", /*按钮选择器，用于触发弹出插件*/
+        "type": "ym",/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+        "minDate": "1900-1-1",/*最小日期*/
+        "maxDate": "2100-12-31",/*最大日期*/
+        "onSubmit": function () {/*确认时触发事件*/
+            let theSelectData = calendar.value
+            console.log("theSelectData ===", theSelectData)
+        },
+        "onClose": function () {/*取消时触发事件*/
+        }
+    })
+</script>
+</body>
+</html>
