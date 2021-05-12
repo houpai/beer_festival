@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/register.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.2.3.min.js"></script>
+  <script src="../js/verify.js"></script>
+</head>
+<body>
+  <div class="register_container">
+    <div class="register_bg_box">
+      <p class="register_title">志愿者注册</p>
+      <p class="register_sub_title">以举手之劳,解他人之难</p>
+
+      <div class="isRegistered_box">
+        <span>已注册，去登录</span>
+        <img src="../images/volunteerIndex_icon_right.png" alt="">
+      </div>
+    </div>
+
+
+
+    <div class="form_box">
+      <p class="label_title">
+        真实姓名<span>*</span>
+      </p>
+      <input type="text" />
+      <p class="label_title">
+        身份证号<span>*</span>
+      </p>
+      <input type="text" />
+      <p class="label_title">
+        手机号码<span>*</span>
+      </p>
+      <input type="text" />
+      <p class="label_title">
+        设置密码<span>*</span>
+      </p>
+      <input type="text" type="password"/>
+      <p class="label_title verify">
+        图文验证<span>*</span>
+      </p>
+
+      <div class="verify_box">
+        <input type="text" id="input_code_value">
+        <div class="verify_dom" id="v_container">
+
+        </div>
+      </div>
+
+      <div class="submit_btn" id="submit_btn">
+        加入志愿者
+      </div>
+
+
+    </div>
+  </div>
+</body>
+<script>
+
+  // 表单提交 和 图片验证码验证逻辑
+  var verifyCode = new GVerify("v_container");
+  document.getElementById("submit_btn").onclick = function(){
+    var res = verifyCode.validate(document.getElementById("input_code_value").value);
+    if(res){
+      alert("验证正确");
+    }else{
+      alert("验证码错误");
+    }
+  }
+
+</script>
+</html>

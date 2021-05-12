@@ -1,0 +1,35 @@
+html, body {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+
+.explain_container {
+    margin: 0.15rem;
+}
+
+
+.explain_container .explain_title {
+    height: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.15rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.25rem;
+    background-image: url("../images/explain_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.explain_container .explain_container_box {
+    box-sizing: border-box;
+    padding: 0.1rem;
+    background-color: #fff;
+    border-radius: 0 0 0.03rem 0.03rem;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+}

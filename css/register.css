@@ -1,0 +1,134 @@
+html,body {
+    background: #F6F6F6;
+    height: 100%;
+}
+
+.register_container {
+
+}
+
+.register_container .register_bg_box {
+    background-color: rgba(255, 242, 242, 1);
+    background-image: url("../images/register_bg_1.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 1.58rem;
+    background-size: 1.57rem 1.06rem;
+    box-sizing: border-box;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.register_container .register_bg_box .register_title {
+    font-size: 0.18rem;
+    font-weight: bold;
+    color: #C71B0A;
+    line-height: 0.25rem;
+}
+.register_container .register_bg_box .register_sub_title {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.17rem;
+    margin: 0.06rem 0 0.15rem 0;
+}
+
+.register_container .register_bg_box  .isRegistered_box {
+    display: flex;
+    align-items: center;
+}
+
+.register_container .register_bg_box  .isRegistered_box img {
+    display: block;
+    width: 0.16rem;
+    height: 0.16rem;
+}
+
+.register_container .register_bg_box  .isRegistered_box span {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+    margin-right: 0.06rem;
+}
+
+.register_container .form_box {
+    margin: -0.3rem 0.15rem 0.15rem 0.15rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem;
+    border-radius: 0.03rem;
+
+}
+
+.register_container .form_box .label_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+}
+
+.register_container .form_box .label_title span {
+    color: rgba(199, 27, 10, 1);
+}
+
+.register_container .form_box input {
+    display: block;
+    width: 100%;
+   height: 0.24rem;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin-top: 0.10rem;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
+    padding: 0 0.06rem;
+}
+
+.register_container .form_box .verify_box {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 0.32rem;
+    margin-top: 0.10rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.register_container .form_box .verify_box input {
+    display: block;
+    border: 0;
+    flex: 1;
+    width: 0;
+    outline: 0;
+    margin: 0;
+    height: 100%!important;
+}
+.register_container .form_box .verify_box .verify_dom {
+    height: 100%;
+    width: 0.77rem;
+    position: relative;
+}
+.register_container .form_box .verify_box .verify_dom canvas{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+
+.register_container .form_box  .submit_btn {
+    height: 0.44rem;
+    background: #C71B0A;
+    border-radius: 0.03rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 0.2rem;
+}
