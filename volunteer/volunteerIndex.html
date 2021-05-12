@@ -6,8 +6,10 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/volunteerIndex.css">
   <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <link rel="stylesheet" href="../css/swiper.css">
   <script src="../js/fontsize.js"></script>
   <script src="../js/jquery-1.2.3.min.js"></script>
+  <script src="../js/swiper.min.js"></script>
 </head>
 <body>
 <div class="volunteerIndex_container">
@@ -56,8 +58,19 @@
 
 
   <div class="list_detail_box">
-    <div class="register_img_box">
-      <img src="../images/volunteerIndex_bg_2.png" alt="">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide register_img_box">
+          <img src="../images/volunteerIndex_bg_2.png" alt="">
+        </div>
+        <div class="swiper-slide register_img_box">
+          <div class="downlooad_swiper">
+            <p class="title">下载志愿辽宁APP</p>
+            <div class="download_btn">我要下载</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <div class="action_box">
@@ -140,4 +153,13 @@
 
 </div>
 </body>
+
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: true,//可选选项，自动滑动
+    pagination: {
+      el: '.swiper-pagination'
+    },
+  })
+</script>
 </html>

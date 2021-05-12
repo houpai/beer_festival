@@ -168,18 +168,20 @@ body, html {
 }
 
 .volunteerIndex_container .list_detail_box .register_img_box {
-    margin-bottom: 0.3rem;
+    /*margin-bottom: 0.3rem;*/
 }
 
 .volunteerIndex_container .list_detail_box .register_img_box img {
     display: block;
     height: 1.1rem;
+    width: 100%;
 }
 
 .volunteerIndex_container .list_detail_box .action_box {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0.3rem 0 0 0;
 }
 
 .volunteerIndex_container .list_detail_box .action_box .item {
@@ -290,6 +292,62 @@ body, html {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0!important;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 0.06rem;
+    padding-right: 0.04rem;
+}
+
+.swiper-pagination-bullet {
+    width: 24px!important;
+    height: 6px!important;
+    border-radius: 8px!important;
+}
+.swiper-pagination-bullet-active{
+    background: #C71B0A!important;
+}
+
+
+.downlooad_swiper {
+    height: 1.1rem;
+    width: 100%;
+    background-image: url("../images/download_swiper_img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 0.2rem;
+
+}
+
+
+.downlooad_swiper .title{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.2rem;
+}
+
+.downlooad_swiper .download_btn{
+    width: 0.74rem;
+    height: 0.23rem;
+    background: #C71B0A;
+    border-radius: 0.06rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.17rem;
+    display: flex;
 }
 
 

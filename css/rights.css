@@ -67,6 +67,7 @@ body,html {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
     padding-bottom: 0.15rem;
+    margin-bottom: 0.16rem;
 }
 
 .rights_container .rights_list .rights_list_item .rights_img_box {
