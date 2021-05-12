@@ -1,0 +1,158 @@
+body,html {
+    height: 100%;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.rights_container {
+    padding-bottom: 1rem;
+}
+
+.rights_container .top_box {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem 0 0.15rem;
+}
+
+.rights_container .top_box .top_bg_box {
+    height: 0.93rem;
+    background-color: rgba(255, 242, 242, 1);
+    border-radius: 0.03rem 0.03rem 0 0;
+    background-image: url("../images/rights_bg_heart.png");
+    background-repeat: no-repeat;
+    background-size: 0.8rem 0.74rem;
+    background-position: 2.42rem 0.09rem;
+    box-sizing: border-box;
+    padding: 0 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rights_container .top_box .top_bg_box .rights_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #C71B0A;
+    line-height: 0.22rem;
+    margin-bottom: 0.06rem;
+}
+
+.rights_container .top_box .top_bg_box .rights_sub_title {
+    font-size: 0.14rem;
+    font-weight: bolder;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.rights_container .rights_list_container {
+    background-color: rgba(242, 242, 242, 1);
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem;
+}
+
+.rights_container .rights_list_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.14rem;
+}
+
+.rights_container .rights_list {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0.15rem;
+}
+
+.rights_container .rights_list .rights_list_item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding-bottom: 0.15rem;
+}
+
+.rights_container .rights_list .rights_list_item .rights_img_box {
+    flex-shrink: 0;
+    margin-right: 0.15rem;
+}
+
+.rights_container .rights_list .rights_list_item .rights_img_box img{
+   display: block;
+    width: 0.64rem;
+    height: 0.84rem;
+    border-radius: 0.03rem;
+}
+
+.rights_container .rights_list .rights_list_item .rights_message_box {
+    flex: 1;
+    flex-shrink: 0;
+    width: 0;
+}
+
+.rights_container .rights_list .rights_list_item .rights_message_box .rights_name{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.06rem;
+}
+
+.rights_container .rights_list .rights_list_item .rights_message_box .rights_count{
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.2rem;
+    margin-bottom: 0.15rem;
+}
+.rights_container .rights_list .rights_list_item .rights_message_box .rights_price{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #C71B0A;
+    line-height: 0.22rem;
+}
+
+.rights_container .open_btn_box {
+    height: 0.8rem;
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.rights_container .open_btn_box .open_btn {
+    height: 0.44rem;
+    border-radius: 0.03rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #C71B0A;
+    position: relative;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.22rem;
+}
+
+
+.rights_container .open_btn_box .open_btn .time_limit_price {
+    display: inline-flex;
+    width: 0.66rem;
+    height: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(243deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    border-radius: 0.11rem 0.11rem 0.11rem 0;
+
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 0.2rem;
+    position: absolute;
+    right: 0.65rem;
+    margin-top: -0.04rem;
+}

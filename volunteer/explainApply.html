@@ -83,24 +83,39 @@
   var imgName = []; //图片名字
   $(function() {
 
-
-
     // 点击所在地区
     $('#selectArea').on('click', function () {
-      // 地址三级联动
-      weui.picker(cityData3, {
-        defaultValue: ["110000", "110100", "110101"],
-        onConfirm: function (result) {
-          var str = "";
-          var cityArr = [];
-          result.map(function (i, val) {
-            str += i["label"] + ' ';
-            cityArr.push(i["value"]);
-          });
-          $("#selectArea").val(str);
-          $("#selectArea").attr("cityArr", cityArr);
+      weui.picker([
+        {
+          label: '沈阳',
+          value: 0,
+          disabled: true // 不可用
+        },
+        {
+          label: '大连',
+          value: 1
+        },
+        {
+          label: '鞍山',
+          value: 3
+        },
+        {
+          label: '抚顺',
+          value: 4,
         }
-      })
+      ], {
+        defaultValue: [3],
+        onChange: function (result) {
+          console.log(result)
+        },
+        onConfirm: function (result) {
+          $("#selectArea").val(result[0].label);
+        },
+        id: 'selectArea'
+      });
+
+
+
     });
 
 

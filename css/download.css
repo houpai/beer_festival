@@ -1,0 +1,103 @@
+body,html {
+    height: 100%;
+    background-color: #fff;
+}
+
+
+.download_container {
+
+}
+
+.download_container .download_bg_box {
+    height: 2.56rem;
+    background-image: url("../images/download_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0.58rem 0.2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.download_container .download_bg_box .download_bg_title{
+    font-size: 0.2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 0.28rem;
+    margin-bottom: 0.15rem;
+}
+
+.download_container .download_bg_box .download_bg_sub_title{
+    width: 1.68rem;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 0.2rem;
+}
+
+.download_container .download_code_box {
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.download_container .download_code_box .download_code_title{
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.06rem;
+}
+.download_container .download_code_box .download_code_sub_title{
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.2rem;
+}
+
+.download_container .download_code_box .code_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0 0 0;
+}
+
+.download_container .download_code_box .code_container .code_item_box {
+    width: 1.6rem;
+    box-sizing: border-box;
+    padding: 0.15rem;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 0.03rem;
+}
+
+.download_container .download_code_box .code_container .code {
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.download_container .download_code_box .code_container .code img{
+   display: block;
+    width: 100%;
+    height: 1.3rem;
+}
+
+.download_container .download_code_box .code_container .sys_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.15rem 0 0 0;
+}
+
+.download_container .download_code_box .code_container .sys_box img{
+   display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+}
+
+.download_container .download_code_box .code_container .sys_box span{
+    font-size: 0.14rem;
+    font-weight: bolder;
+    color: #333333;
+    line-height: 0.2rem;
+    margin-left: 0.08rem;
+}
