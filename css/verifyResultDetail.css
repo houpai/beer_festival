@@ -1,0 +1,61 @@
+html, body {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+
+.verifyResultDetail_container .result_box {
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0.2rem 0.15rem;
+}
+
+.verifyResultDetail_container .result_box .result_box_container {
+    min-height: 1.1rem;
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 0.03rem;
+    padding: 0.15rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.verifyResultDetail_container .result_box .result_box_container .result_message_box {
+    flex: 1;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.verifyResultDetail_container .result_box .result_box_container .result_img {
+   display: block;
+    width: 0.58rem;
+    height: 0.58rem;
+    margin-left: 0.1rem;
+}
+
+.verifyResultDetail_container .result_box .result_box_container .result_message_box  .result_title {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    margin-bottom: 0.06rem;
+}
+
+.verifyResultDetail_container .result_box .result_box_container .result_message_box  .result_sub_title {
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    margin-bottom: 0.15rem;
+}
+
+.verifyResultDetail_container .result_box .result_box_container .result_message_box  .time {
+    font-size:0.12rem;
+    font-weight: 400;
+    color: #999999;
+    line-height: 0.17rem;
+}
+
+.verifyResultDetail_container .result_box .result_box_container .result_message_box  .result_title.no_pass {
+    color: rgba(199, 27, 10, 1)!important;
+}
