@@ -1,0 +1,152 @@
+body,html {
+  min-height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+
+.myCardList_container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem 0.4rem 0.15rem;
+}
+
+.myCardList_container .card_item_box {
+  height: 1.27rem;
+  box-sizing: border-box;
+  padding: 0.15rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.2rem;
+}
+
+.myCardList_container .card_item_box .flex_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex_box.margin_b {
+  margin-bottom: 0.06rem;
+}
+
+.myCardList_container .card_item_box .card_name {
+  font-size: 0.18rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.25rem;
+}
+
+.myCardList_container .card_item_box .total {
+  font-size:0.12rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.17rem;
+}
+
+.myCardList_container .card_item_box .card_icon_box {
+  display: inline-flex;
+  min-width: 0.56rem;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  border-radius: 0.09rem;
+  border: 1px solid #FFFFFF;
+  padding: 1px 0;
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.17rem;
+}
+
+.myCardList_container .card_item_box .integral_detail {
+  font-size: 0.2rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.28rem;
+}
+
+.myCardList_container .card_item_box .card_price {
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.2rem;
+  margin-right: 0.15rem;
+}
+
+.myCardList_container .card_item_box .open_btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 0.09rem;
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding: 1px 0.12rem;
+}
+
+.myCardList_container .card_item_box .card_message {
+  display: flex;
+}
+
+.myCardList_container .card_item_box .detail_btn {
+  display: flex;
+  align-items: center;
+}
+
+.myCardList_container .card_item_box .detail_btn span{
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.17rem;
+}
+
+
+.myCardList_container .card_item_box .detail_btn img{
+  display: block;
+  width: 0.12rem;
+  height: 0.12rem;
+  margin-left: 0.02rem;
+}
+
+.myCardList_container .action_box {
+  margin-top: 0.22rem;
+}
+
+.myCardList_container .card_item_box {
+  position: relative;
+}
+
+.myCardList_container .card_item_box .outDate_mask {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .6);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 0.15rem;
+}
+
+.myCardList_container .card_item_box .outDate_mask .outDate_img{
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

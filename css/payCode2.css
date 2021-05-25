@@ -1,65 +1,14 @@
-/*header部分样式*/
-.header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 99;
-    display: flex;
-    align-items: center;
-    height: 0.44rem;
-    background: rgba(72, 143, 241, 1);
-}
-
-body {
-    background: rgba(72, 143, 241, 1);
-}
-
-
-.header .left {
-    width: 0.36rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header .left i{
-    color: #fff;
-}
-
-.header .right {
-    width: 0.36rem;
-    height: 100%;
-    font-size: 0.16rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.header .middle {
-    flex: 1;
-    width: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.16rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.iconfont {
-    color: #333333;
-    font-size: 0.28rem !important;
-}
 
 html,body { height: 100% }
 
+.platinumCard_container.green {
+    background: rgba(0, 184, 125, 1)!important;
+}
 
 
 .platinumCard_container {
     box-sizing: border-box;
-    padding: 0.56rem 0.16rem;
+    padding: 0.16rem;
     height: 100%;
     background: rgba(72, 143, 241, 1);
 }
@@ -155,6 +104,54 @@ html,body { height: 100% }
     text-align: center;
 }
 
+.payCode_desc_box {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+}
+
+.payCode_desc_box .card_type {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.payCode_desc_box .current_cent {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+}
+.payCode_desc_box .current_cent span {
+    color: rgba(72, 143, 241, 1);
+}
+
+.change_type_btn {
+    height: 0.52rem;
+    background: #FFFFFF;
+    border-radius: 0.03rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+    margin-top: 0.2rem;
+}
+
+.change_type_btn span {
+    font-size: 0.14rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.2rem;
+}
+
+.change_type_btn img {
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+}
 
 
 

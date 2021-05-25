@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/activityDetail.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=T6wd0ze4m3SALtHj7G6M4aphGrpPtoqm"></script>
+</head>
+<body>
+  <div class="activityDetail_container">
+    <div class="activity_top_message_box">
+      <div class="top_box">
+        <div class="img_box">
+          <img src="https://img2.baidu.com/it/u=1514715870,2779893896&fm=15&fmt=auto&gp=0.jpg" alt="">
+        </div>
+        <div class="message_box">
+          <p class="activity_name">防控抗击疫情宣传活动</p>
+          <p class="publisher_title">发布者：</p>
+          <p class="publisher">辽宁轨道交通职业青年志愿者协会</p>
+        </div>
+      </div>
+
+      <div class="desc_box">
+        当前，全国出现了新增本土病例，这也让我们刚刚放下的弦再一次紧绷起开，同时，也让我们明白一个道理，那就是疫情并没有过去。
+      </div>
+    </div>
+
+    <div class="map_box">
+      <h4 class="map_box_title">活动详情</h4>
+      <div class="map_container" id="container">
+
+      </div>
+      <div class="message_flex_box">
+        <div class="left">招募时间：</div>
+        <div class="right">2021.05.21  00:00-2021.05.22  00:00</div>
+      </div>
+      <div class="message_flex_box">
+        <div class="left">活动时间：</div>
+        <div class="right">2021.05.21  00:00-2021.05.22  00:00</div>
+      </div>
+      <div class="message_flex_box">
+        <div class="left">活动地址：</div>
+        <div class="right">辽宁省沈阳市铁西区昆明湖街道十三号路366号</div>
+      </div>
+    </div>
+
+
+    <div class="message_box">
+      <h4 class="message_box_title">活动说明</h4>
+      <div class="message_box_desc">
+        活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明
+      </div>
+    </div>
+
+    <div class="message_box">
+      <h4 class="message_box_title">志愿者保障</h4>
+      <div class="message_box_desc">
+        志愿者保障志愿者保障志愿者保障志愿者保障志愿者保障志愿者保障志愿者保障志愿者保障志愿者保障志愿者保障志愿者保障
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="fixed_btn_box">
+    <p>参与人数：<span>20</span>人</p>
+    <div class="signUp_btn">
+      我要报名
+    </div>
+  </div>
+</body>
+<script>
+
+
+  $(document).ready(function(){
+    var map = new window.BMap.Map('container');
+    map.centerAndZoom(new window.BMap.Point(116.404, 39.915), 12)
+    var point = new BMap.Point(116.404, 39.915);
+    var marker = new BMap.Marker(point);
+    map.addOverlay(marker);
+    map.enableScrollWheelZoom(true);
+  });
+
+</script>
+</html>
