@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/oilPay.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<div class="oilPay_container">
+  <div class="top_car_bg_box"></div>
+  <div class="choose_box">
+    <h4 class="box_title">加油金额</h4>
+    <p class="sub_title">满100减3元</p>
+
+    <div class="price_item_box">
+      <div class="item_box choose_active">
+        <p class="price">
+          100元
+        </p>
+        <p class="desc_p">
+          优惠抵扣价
+        </p>
+        <p class="current_price">
+          97元
+        </p>
+      </div>
+      <div class="item_box">
+        <p class="price">
+          200元
+        </p>
+        <p class="desc_p">
+          优惠抵扣价
+        </p>
+        <p class="current_price">
+          194元
+        </p>
+      </div>
+      <div class="item_box">
+        <p class="price">
+          300元
+        </p>
+        <p class="desc_p">
+          优惠抵扣价
+        </p>
+        <p class="current_price">
+          291元
+        </p>
+      </div>
+    </div>
+
+    <div class="pay_btn">
+      支付
+    </div>
+  </div>
+
+  <div class="activity_desc">
+    <h4 class="box_title">活动说明</h4>
+    <p class="desc_detail">
+      活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明
+    </p>
+  </div>
+</div>
+
+<div class="modal_dialog hide">
+  <div class="pay_box">
+    <p class="pay_desc">支付方式</p>
+    <span class="waiting_pay">待支付</span>
+    <span class="pay_price">¥198.00</span>
+
+    <div class="pay_btn gong">
+      <img src="../images/pay_by_gong.png" alt="">
+      <span>工券支付</span>
+    </div>
+    <div class="pay_btn wx">
+      <img src="../images/pay_by_wx.png" alt="">
+      <span>微信支付</span>
+    </div>
+
+    <span class="cancel_pay_btn">取消支付</span>
+  </div>
+</div>
+
+</body>
+
+<script>
+
+  (function (){
+    // 防止滑动穿透
+    let scrollTop = 0; // 打开弹窗的时候的scrollTop
+    // 打开弹窗的时候给body正确的高度定位，关闭的时候再恢复
+    $('.pay_btn').click(function (){
+      scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      document.body.classList.add('model-open');
+      document.body.style.top = - scrollTop + 'px';
+      $('.modal_dialog').removeClass('hide')
+    })
+
+    $('.cancel_pay_btn').click(function (){
+      document.body.classList.remove('model-open');
+      $(document).scrollTop(scrollTop)
+      $('.modal_dialog').addClass('hide')
+    })
+
+  })()
+
+</script>
+</html>

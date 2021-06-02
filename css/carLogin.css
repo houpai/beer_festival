@@ -1,0 +1,112 @@
+html,body {
+  background-color: #fff;
+}
+
+
+.carLogin_container {
+
+}
+
+.carLogin_container .carLogin_bg_box {
+  height: 1.86rem;
+  background: linear-gradient(180deg, #488FF1 0%, #FFFFFF 100%);
+  box-sizing: border-box;
+  padding: 0.2rem 0.2rem 0.44rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.carLogin_container .carLogin_bg_box p {
+  font-size: 0.2rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 0.3rem;
+}
+
+.carLogin_container .login_form_box {
+  box-sizing: border-box;
+  margin: 0 0.2rem 0.2rem 0.2rem;
+}
+
+.carLogin_container .login_form_box .input_box  {
+  height: 0.52rem;
+  margin-bottom: 0.2rem;
+  background: #F2F2F2;
+}
+.carLogin_container .login_form_box .input_box input {
+  display: block;
+  height: 100%;
+  outline: none;
+  border: 0;
+  background: #F2F2F2;
+  border-radius: 0.03rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.15rem;
+  font-size: 0.16rem;
+  font-weight: 400;
+  line-height: 0.22rem;
+}
+
+.carLogin_container .login_form_box  .flex_input_box {
+  display: flex;
+  height: 0.52rem;
+  margin-bottom: 0.6rem;
+  background: #F2F2F2;
+  align-items: center;
+}
+
+.carLogin_container .login_form_box  .flex_input_box .code_btn_box {
+  width: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 0.16rem;
+  font-weight: 400;
+  color: #488FF1;
+  line-height: 0.22rem;
+  border: 0;
+  outline: 0;
+}
+
+.carLogin_container .login_form_box  .flex_input_box .code_btn_box:disabled {
+  color: #CCCCCC!important;
+}
+
+.carLogin_container .login_form_box  .flex_input_box .line {
+  width: 1px;
+  height: 0.22rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carLogin_container .login_form_box  .flex_input_box input {
+  display: block;
+  width: 0;
+  box-sizing: border-box;
+  flex: 1;
+  padding: 0.15rem;
+
+  border: 0;
+  background: #F2F2F2;
+  border-radius: 0.03rem;
+  font-size: 0.16rem;
+  font-weight: 400;
+  line-height: 0.22rem;
+}
+
+.login_form_box .login_btn {
+  height: 0.44rem;
+  background: #488FF1;
+  border-radius: 0.03rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.22rem;
+
+}
