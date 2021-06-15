@@ -1,0 +1,283 @@
+html,body {
+  background-color: #fff;
+}
+
+
+.carEcology_container {
+
+}
+
+.bg_top {
+  height: 1rem;
+  background: linear-gradient(180deg, #488FF1 0%, #267DF5 100%);
+}
+
+.carEcology_container .user_detail_box {
+  margin: -0.4rem 0.15rem 0.15rem 0.15rem;
+  background-color: rgba(229, 240, 255, 1);
+  height: 0.88rem;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem;
+  display: flex;
+  border-radius: 0.03rem;
+}
+
+.carEcology_container .user_detail_box .user_img {
+  display: block;
+  margin-right: 0.15rem;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+
+.carEcology_container .user_detail_box .message_box_detail {
+  flex: 1;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carEcology_container .user_detail_box .message_box_detail .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carEcology_container .user_detail_box .message_box_detail .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carEcology_container .user_detail_box .message_box_detail .name {
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.2rem;
+}
+.carEcology_container .user_detail_box .message_box_detail .phone {
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.2rem;
+}
+
+.carEcology_container .user_detail_box .message_box_detail .detail {
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #E22121;
+  line-height: 0.22rem;
+}
+.carEcology_container .user_detail_box .message_box_detail .unit {
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #E22121;
+  line-height: 0.2rem;
+}
+
+.carEcology_actions_box {
+  margin: 0.15rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.carEcology_actions_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.15rem;
+  width: 25%;
+}
+.carEcology_actions_item .img {
+  display: block;
+  width: 0.32rem;
+  height: 0.32rem;
+  margin-bottom: 0.06rem;
+}
+
+.carEcology_actions_item span {
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.2rem;
+}
+
+
+.car_card_box {
+  margin: 0 0.15rem;
+  border-radius: 0.06rem;
+  overflow: hidden;
+  height: 1.06rem;
+  background-image: url("../images/car_card_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 0.15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.car_card_box .car_card_title {
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.22rem;
+}
+.car_card_box .car_card_sub_title {
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.2rem;
+  margin: 0.06rem 0 0.1rem 0;
+}
+.car_card_box .car_card_btn {
+  width: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.03rem 0;
+  font-size: 0.12rem;
+  font-weight: bold;
+  color: #1524AB;
+  line-height: 0.17rem;
+  border-radius: 0.03rem;
+  overflow: hidden;
+
+  background: #FFFFFF;
+}
+
+.car_list_bg_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.3rem 0 0.15rem 0;
+}
+
+.car_list_bg_box img {
+  width: 1.6rem;
+  height: 0.4rem;
+  display: block;
+}
+
+.car_list_ul {
+  margin: 0 0.15rem 0.3rem 0.15rem;
+}
+
+.car_list_ul .car_list_item {
+  background: #FFFFFF;
+  border-radius: 0.08rem;
+  border: 1px solid rgba(151, 151, 151, 0.1);
+  display: flex;
+  box-sizing: border-box;
+  padding: 0.1rem;
+  margin-bottom: 0.15rem;
+}
+
+.car_list_ul .car_list_item .item_img {
+  width: 0.84rem;
+  height: 0.84rem;
+  display: block;
+  margin-right: 0.1rem;
+}
+
+
+.car_list_ul .car_list_item .car_list_item_message_box {
+  flex: 1;
+  width: 0;
+}
+
+.car_list_ul .car_list_item .car_list_item_message_box .name {
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 0.2rem;
+  margin-bottom: 0.08rem;
+}
+.car_list_ul .car_list_item .car_list_item_message_box .desc {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.17rem;
+  margin-bottom: 0.08rem;
+}
+.car_list_ul .car_list_item .car_list_item_message_box .number {
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #E22121;
+  line-height: 0.2rem;
+  margin-bottom: 0.08rem;
+}
+
+
+.modal_dialog.hide {
+  display: none!important;
+}
+
+.model-open {
+  position: fixed;
+  width: 100%;
+}
+
+
+.modal_dialog {
+  position: fixed;
+  z-index: 111;
+  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.modal_dialog  .modal_dialog_container {
+  width: 2.49rem;
+  background: #FFFFFF;
+  border-radius: 0.03rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.2rem;
+}
+.modal_dialog  .modal_dialog_container .car_dialog_bg {
+  width: 100%;
+  height: 2.36rem;
+  display: block;
+}
+
+.modal_dialog  .modal_dialog_container .dialog_desc {
+  width: 1.78rem;
+  text-align: center;
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 0.2rem;
+  margin: 0.18rem 0 0.12rem 0;
+}
+
+
+.modal_dialog  .modal_dialog_container .use_btn {
+  width: 1.29rem;
+  height: 0.32rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.22rem;
+
+  background: #488FF1;
+  border-radius: 0.03rem;
+}
+.modal_dialog .close_btn {
+  display: block;
+  width: 0.36rem;
+  height: 0.36rem;
+  margin-top: 0.23rem;
+}
