@@ -1,0 +1,249 @@
+
+html,body {
+  height: 100%;
+}
+
+.tangCarDataSys_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 100%;
+}
+
+
+
+.tangCarDataSys_container  .top_box {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem;
+}
+
+.tangCarDataSys_container  .top_box .bottom_container {
+  height: 1.05rem;
+  background: linear-gradient(180deg, #2980F5 0%, #1249E8 100%);
+  border-radius: 0.1rem;
+  margin-top: 0.1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tangCarDataSys_container  .top_box .bottom_container .item_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.tangCarDataSys_container  .top_box .bottom_container .item_box .box_detail {
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.22rem;
+  margin-bottom: 0.06rem;
+}
+.tangCarDataSys_container  .top_box .bottom_container .item_box .box_title {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.17rem;
+}
+
+.tangCarDataSys_container .search_box {
+  width: 100%;
+  height: 0.4rem;
+  background: #F2F2F2;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0.03rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0.08rem 0 0.15rem;
+}
+
+.tangCarDataSys_container .search_box .search_img{
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  flex-shrink: 0;
+}
+
+.tangCarDataSys_container .search_box .search_input{
+  flex: 1;
+  flex-shrink: 0;
+  height: 100%;
+  border: 0;
+  margin-left: 0.04rem;
+  padding: 0 0.04rem;
+  box-sizing: border-box;
+  background: #F2F2F2;
+}
+
+.tangCarDataSys_container  .search_box .search_btn {
+  width: 0.62rem;
+  height: .3rem;
+  border-radius: 0.03rem;
+  font-size: 0.16rem;
+  font-weight: 400;
+  color: rgba(2, 60, 228, 1);
+  line-height: 0.22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0.1rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.tangCarDataSys_container  .search_box  .search_input:focus {
+  outline: none;
+}
+
+.tangCarDataSys_container  .flex_list_box {
+  flex: 1;
+  height: 0;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem;
+  background: #F2F2F2;
+  border-radius: 0.1rem 0.1rem 0px 0px;
+  overflow: scroll;
+}
+.tangCarDataSys_container  .flex_list_box::-webkit-scrollbar {
+  display: none;
+}
+
+.tangCarDataSys_container  .flex_list_box .list_item {
+  background: #FFFFFF;
+  border-radius: 0.1rem;
+  overflow: hidden;
+  margin-bottom: 0.15rem;
+  box-sizing: border-box;
+  padding: 0.15rem;
+  display: flex;
+  align-items: center;
+}
+
+.tangCarDataSys_container  .flex_list_box .list_item .img {
+  display: block;
+  margin-right: 0.15rem;
+  flex-shrink: 0;
+  width: 0.48rem;
+  height: 0.48rem;
+}
+
+.tangCarDataSys_container  .flex_list_box .list_item .right_img {
+  display: block;
+  margin-left: 0.12rem;
+  width: 0.12rem;
+  height: 0.12rem;
+}
+
+.tangCarDataSys_container  .flex_list_box .list_item .message_box {
+  flex: 1;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tangCarDataSys_container  .flex_list_box .list_item .message_box .store_name {
+  font-size: 0.16rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.22rem;
+  margin-bottom: 0.08rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tangCarDataSys_container  .flex_list_box .list_item .message_box .fenhong {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.17rem;
+}
+.tangCarDataSys_container  .flex_list_box .list_item .message_box .fenhong .detail {
+  color: rgba(228, 2, 2, 1);
+}
+
+.tangCarDataSys_container  .center_flex_box {
+  margin-top: 0.15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tangCarDataSys_container  .center_flex_box .center_flex_box_title {
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 0.22rem;
+}
+
+
+.tangCarDataSys_container  .date_select {
+  display: flex;
+  align-items: center;
+}
+.tangCarDataSys_container  .date_select img {
+  display: block;
+  width: 0.10rem;
+  height: 0.10rem;
+}
+
+.tangCarDataSys_container  .date_select span{
+  font-size: 0.14rem;
+  font-weight: bold;
+  color: #999999;
+  line-height: 0.2rem;
+  margin-right: 0.04rem;
+}
+.tangCarDataSys_container .select_option_box {
+  display: flex;
+  align-items: center;
+}
+
+.tangCarDataSys_container .select_option_box .line {
+  height: 0.14rem;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 0 0.12rem;
+}
+
+.weui-picker__hd {
+  background-color: #f1f2f4!important;
+}
+
+.weui-picker__action {
+  color: #0575f2!important;
+  font-weight: bold!important;
+  font-size: 0.14rem!important;
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+}
+
+
+
+.weui-picker__mask {
+  background: linear-gradient(
+    180deg
+    , hsla(0, 0%, 100%, .95), hsla(0, 0%, 100%, .6)), linear-gradient(
+    0deg
+    , hsla(0, 0%, 100%, .95), hsla(0, 0%, 100%, .6));
+}
+
+.date_btn {
+  font-size: 0.14rem!important;
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+
+}
+
+.date_ctrl {
+  background: #fff!important;
+}
+
+.date_roll_mask {
+  background: linear-gradient(
+    180deg
+    , hsla(0, 0%, 100%, .95), hsla(0, 0%, 100%, .6)), linear-gradient(
+    0deg
+    , hsla(0, 0%, 100%, .95), hsla(0, 0%, 100%, .6))!important;
+}

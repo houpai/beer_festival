@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/transactionDetail.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <script src="../js/datePicker.js"></script>
+</head>
+<body>
+  <div class="transactionDetail_container">
+    <div class="top_bg_box">
+      <div class="date_select" id="date_select">
+        <span>2020-09</span>
+        <img src="../images/tangCar_icon_1.png" alt="">
+      </div>
+      <img src="../images/tangCar_bg_1.png" alt="">
+    </div>
+
+    <div class="banner_box">
+      <div class="item_box">
+        <div class="item_box_title">今日分红</div>
+        <div class="detail_value">2090</div>
+      </div>
+      <div class="line"></div>
+      <div class="item_box">
+        <div class="item_box_title">本月分红</div>
+        <div class="detail_value">17.36万</div>
+      </div>
+    </div>
+
+
+    <div class="list_box">
+      <div class="list_box_title">
+        <span class="title">交易明细</span>
+        <span class="tip">默认展示1年内</span>
+      </div>
+
+      <ul class="list_box_ul">
+        <li class="list_box_item">
+          <div class="flex_box">
+            <p class="product_name">商品名称商品名称商品名称</p>
+            <p class="price">+82.7</p>
+          </div>
+          <div class="flex_box">
+            <p class="store_name">商品名称商品名称商</p>
+            <p class="time">2020.09.09 19:00:00</p>
+          </div>
+        </li>
+        <li class="list_box_item">
+          <div class="flex_box">
+            <p class="product_name">商品名称商品名称商品名称</p>
+            <p class="price blue">+82.7</p>
+          </div>
+          <div class="flex_box">
+            <p class="store_name">商品名称商品名称商</p>
+            <p class="time">2020.09.09 19:00:00</p>
+          </div>
+        </li>
+        <li class="list_box_item">
+          <div class="flex_box">
+            <p class="product_name">商品名称商品名称商品名称</p>
+            <p class="price blue">+82.7</p>
+          </div>
+          <div class="flex_box">
+            <p class="store_name">商品名称商品名称商</p>
+            <p class="time">2020.09.09 19:00:00</p>
+          </div>
+        </li>
+        <li class="list_box_item">
+          <div class="flex_box">
+            <p class="product_name">商品名称商品名称商品名称</p>
+            <p class="price">+82.7</p>
+          </div>
+          <div class="flex_box">
+            <p class="store_name">商品名称商品名称商</p>
+            <p class="time">2020.09.09 19:00:00</p>
+          </div>
+        </li>
+        <li class="list_box_item">
+          <div class="flex_box">
+            <p class="product_name">商品名称商品名称商品名称</p>
+            <p class="price">+82.7</p>
+          </div>
+          <div class="flex_box">
+            <p class="store_name">商品名称商品名称商</p>
+            <p class="time">2020.09.09 19:00:00</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript">
+
+  let calendar = new datePicker()
+  calendar.init({
+    "trigger": "#date_select", /*按钮选择器，用于触发弹出插件*/
+    "type": "ym",/*模式：date日期；datetime日期时间；time时间；ym年月；*/
+    "minDate": "1900-1-1",/*最小日期*/
+    "maxDate": "2100-12-31",/*最大日期*/
+    "onSubmit": function () {/*确认时触发事件*/
+      let theSelectData = calendar.value
+      console.log("theSelectData ===", theSelectData)
+    },
+    "onClose": function () {/*取消时触发事件*/
+    }
+  })
+
+
+</script>
+</html>
