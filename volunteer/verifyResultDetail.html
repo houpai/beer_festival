@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../iconfont/iconfont.css">
     <script src="../js/fontsize.js"></script>
     <script src="../js/jquery-1.8.3.min.js"></script>
+    <script src="../js/clipic.js"></script>
 </head>
 <body>
 <div class="verifyResultDetail_container">
@@ -38,10 +39,10 @@
             本人照片
         </p>
         <div class="upload_box content-img">
-            <ul class="content-img-list"></ul>
             <div class="file">
                 <i class="gcl gcladd"></i>
-                <input type="file" name="file" accept="image/*" id="upload">
+                <input type="file" name="file" id="upload" class="upload-img" accept="image/*" onchange="chooseImg(this)" />
+                <img src="" alt="" id="previewImg" class="content-img-list-item hide">
             </div>
             <p class="upload_desc">
                 请上传公民本人正面免冠彩色头像，头部占照片尺寸的2/3，无边框，人像清晰，无变形。本照片将用于“志愿者证”的正面，请认真上传。
@@ -61,117 +62,36 @@
 </body>
 
 <script>
-    var imgFile = []; //文件流
-    var imgSrc = []; //图片路径
-    var imgName = []; //图片名字
-    $(function () {
-
-        // 鼠标经过显示删除按钮
-        $('.content-img-list').on('mouseover', '.content-img-list-item', function () {
-            $(this).children('div').removeClass('hide');
-        });
-        // 鼠标离开隐藏删除按钮
-        $('.content-img-list').on('mouseleave', '.content-img-list-item', function () {
-            $(this).children('div').addClass('hide');
-        });
-        // 单个图片删除
-        $(".content-img-list").on("click", '.content-img-list-item span .gcllajitong', function () {
-            var index = $(this).parent().parent().parent().index();
-            imgSrc.splice(index, 1);
-            imgFile.splice(index, 1);
-            imgName.splice(index, 1);
-            var boxId = ".content-img-list";
-            addNewContent(boxId);
-            if (imgSrc.length < 1) { //显示上传按钮
-                $('.content-img .file').show();
-            } else {
-                $('.content-img .file').hide();
-            }
-        });
 
 
-        $(".content-img-list").on("click", '.content-img-list-item a .gclfangda', function () {
-            var index = $(this).parent().parent().parent().index();
-            $(".modal-content").html("");
 
+    var clipic = new Clipic()
+    function chooseImg(event) {
+        var files = event.files || event.dataTransfer.files
+        var reader = new FileReader()
+        reader.readAsDataURL(files[0])
+        reader.onload = e => {
+            clipic.getImage({
+                width: 88,
+                height: 88,
+                src: e.target.result,
+                name: 'test',
+                encode: 'base64', // 支持 base64、blob、file
+                type: 'png',
+                // quality: '0.9', // 导出图片的质量
+                onDone: function (e) {
+                    document.getElementById('previewImg').src = e
+                    $('.content-img .content-img-list-item').removeClass('hide');
+                    $('.gcladd').hide();
+                    console.log('e======', e)
 
-        });
-
-
-    });
-    //图片上传
-    $('#upload').on('change', function (e) {
-        var imgSize = this.files[0].size;
-        if (imgSize > 1024 * 500 * 1) { //1M
-            return alert("上传图片不能超过500KB");
+                },
+                onCancel: function () {
+                    console.log('取消裁剪')
+                }
+            })
         }
-        ;
-        if (this.files[0].type != 'image/png' && this.files[0].type != 'image/jpeg' && this.files[0].type != 'image/gif') {
-            return alert("图片上传格式不正确");
-        }
-
-        var imgBox = '.content-img-list';
-        var fileList = this.files;
-        for (var i = 0; i < fileList.length; i++) {
-            var imgSrcI = getObjectURL(fileList[i]);
-            imgName.push(fileList[i].name);
-            imgSrc.push(imgSrcI);
-            imgFile.push(fileList[i]);
-        }
-        addNewContent(imgBox);
-        this.value = null; //上传相同图片
-
-        console.log('imgSrc===', imgSrc)
-        if (imgSrc.length < 1) { //显示上传按钮
-            $('.content-img .file').show();
-        } else {
-            $('.content-img .file').hide();
-        }
-    });
-
-    //提交请求
-    $('#btn-submit-upload').on('click', function () {
-        var formFile = new FormData();
-
-        // 遍历图片imgFile添加到formFile里面
-        $.each(imgFile, function (i, file) {
-            formFile.append('myFile', file);
-        });
-
-
-    });
-
-    //删除
-    function removeImg(obj, index) {
-        imgSrc.splice(index, 1);
-        imgFile.splice(index, 1);
-        imgName.splice(index, 1);
-        var boxId = ".content-img-list";
-        addNewContent(boxId);
-    }
-
-    //图片展示
-    function addNewContent(obj) {
-        $(obj).html("");
-        for (var a = 0; a < imgSrc.length; a++) {
-            var oldBox = $(obj).html();
-            $(obj).html(oldBox + '<li class="content-img-list-item"><img src="' + imgSrc[a] + '" alt="">' +
-                '<div><span index="' + a + '" class="delete-btn"><i class="gcl gcllajitong"></i></span>' +
-                '</div></li>');
-        }
-    }
-
-    //建立可存取到file的url
-    function getObjectURL(file) {
-        var url = null;
-        if (window.createObjectURL != undefined) { // basic
-            url = window.createObjectURL(file);
-        } else if (window.URL != undefined) { // mozilla(firefox)
-            url = window.URL.createObjectURL(file);
-        } else if (window.webkitURL != undefined) { // webkit or chrome
-            url = window.webkitURL.createObjectURL(file);
-        }
-        return url;
+        event.value = ''
     }
 
 </script>
