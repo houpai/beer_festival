@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/cardUpload.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1805932_ysrcp4y0uy9.css">
+  <link rel="stylesheet" href="../iconfont/iconfont.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <script src="../js/clipic.js"></script>
+</head>
+<body>
+  <div class="cardUpload_container">
+    <div class="card_box">
+      <div class="card_box_title">身份证照片</div>
+      <div class="file_input_box">
+        <div class="top_upload">
+          <img src="" alt="" class="hide uploadCardTop_img" id="uploadCardTop_img">
+          <input type="file" name="file" id="uploadCardTop" class="uploadCardTop hide" accept="image/*" onchange="uploadCardTopChange(this)" />
+        </div>
+        <div class="bottom_upload">
+          <img src="" alt="" class="hide uploadCardBottom_img" id="uploadCardBottom_img">
+          <input type="file" name="file" id="uploadCardBottom" class="uploadCardBottom hide" accept="image/*" onchange="uploadCardBottomChange(this)" />
+        </div>
+      </div>
+    </div>
+
+    <div class="minBing_box upload-content">
+      <div class="minBing_box_title">民兵照片</div>
+
+      <div class="upload_box content-img">
+        <div class="file">
+<!--          <i class="gcl gcladd"></i>-->
+          <input type="file" name="file" id="upload" class="upload-img" accept="image/*" onchange="chooseImg(this)" />
+          <img src="" alt="" id="previewImg" class="content-img-list-item hide">
+        </div>
+        <p class="upload_desc">
+          请上传格式为jpg,文件大小为14k-40k的照片，照片大小1.6cm(宽）*2,2cm（高），
+          无边框，人像清晰，无变形，确保面部，双耳，双肩可见，不得带有饰品。
+        </p>
+      </div>
+
+      <div class="demo_card_box">
+        <div class="message_box">
+          <p class="title">样卡展示</p>
+          <p class="sub_title">铁岭市民兵保障卡</p>
+        </div>
+        <img src="../images/demo_card.png" alt="" class="demo_card_img">
+      </div>
+
+    </div>
+
+    <div class="submit_btn">提交</div>
+  </div>
+</body>
+<script>
+  var clipic = new Clipic()
+  function chooseImg(event) {
+    var files = event.files || event.dataTransfer.files
+    var reader = new FileReader()
+    reader.readAsDataURL(files[0])
+    reader.onload = e => {
+      clipic.getImage({
+        width: 68,
+        height: 85,
+        src: e.target.result,
+        name: 'test',
+        encode: 'base64', // 支持 base64、blob、file
+        type: 'png',
+        // quality: '0.9', // 导出图片的质量
+        onDone: function (e) {
+          document.getElementById('previewImg').src = e
+          $('.content-img .content-img-list-item').removeClass('hide');
+          $('.gcladd').hide();
+          console.log('e======', e)
+
+        },
+        onCancel: function () {
+          console.log('取消裁剪')
+        }
+      })
+    }
+    event.value = ''
+  }
+
+  function uploadCardTopChange(event) {
+    var files = event.files || event.dataTransfer.files
+    var reader = new FileReader()
+    reader.readAsDataURL(files[0])
+    reader.onload = e => {
+      clipic.getImage({
+        width: 142,
+        height: 86,
+        src: e.target.result,
+        name: 'test',
+        encode: 'base64', // 支持 base64、blob、file
+        type: 'png',
+        // quality: '0.9', // 导出图片的质量
+        onDone: function (e) {
+          document.getElementById('uploadCardTop_img').src = e
+          $('.uploadCardTop_img').removeClass('hide');
+        },
+        onCancel: function () {
+          console.log('取消裁剪')
+        }
+      })
+    }
+    event.value = ''
+  }
+
+  function uploadCardBottomChange(event) {
+    var files = event.files || event.dataTransfer.files
+    var reader = new FileReader()
+    reader.readAsDataURL(files[0])
+    reader.onload = e => {
+      clipic.getImage({
+        width: 142,
+        height: 86,
+        src: e.target.result,
+        name: 'test',
+        encode: 'base64', // 支持 base64、blob、file
+        type: 'png',
+        // quality: '0.9', // 导出图片的质量
+        onDone: function (e) {
+          document.getElementById('uploadCardBottom_img').src = e
+          $('.uploadCardBottom_img').removeClass('hide');
+        },
+        onCancel: function () {
+          console.log('取消裁剪')
+        }
+      })
+    }
+    event.value = ''
+  }
+</script>
+</html>

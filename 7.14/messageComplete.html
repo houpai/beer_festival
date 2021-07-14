@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/messageComplete.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.8.3.min.js"></script>
+  <link rel="stylesheet" href="../css/weui.min.css">
+  <script src="../js/weui.min.js"></script>
+</head>
+<body>
+<div class="messageComplete_container">
+  <div class="form_box">
+    <div class="form_item_label">
+      真实姓名
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box">
+      <input type="text" placeholder="请输入姓名">
+    </div>
+    <div class="form_item_label">
+      性别
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box_flex" id="sexPicker">
+      <span class="withOut_value">请选择性别</span>
+      <img src="../images/form_item_right.png" alt="" class="form_item_right">
+    </div>
+    <div class="form_item_label">
+      证件类型
+    </div>
+    <div class="form_item_box">
+      <input type="text" placeholder="请输入证件类型，例：身份证">
+    </div>
+
+    <div class="form_item_label">
+      证件号码
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box">
+      <input type="number" placeholder="请输入证件号码">
+    </div>
+
+    <div class="form_item_label">
+      证件期限
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box">
+      <input type="text" placeholder="请输入证件期限，例：2029-09-09">
+    </div>
+
+    <div class="form_item_label">
+      国籍
+    </div>
+    <div class="form_item_box">
+      <input type="text" placeholder="请输入国籍，例：中国">
+    </div>
+
+    <div class="form_item_label">
+      行业
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box_flex" id="industryPicker">
+      <span class="withOut_value">请选择行业</span>
+      <img src="../images/form_item_right.png" alt="" class="form_item_right">
+    </div>
+
+    <div class="form_item_label">
+      职业
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box_flex" id="occupationPicker">
+      <span class="withOut_value">请选择职业</span>
+      <img src="../images/form_item_right.png" alt="" class="form_item_right">
+    </div>
+
+    <div class="form_item_label">
+      邮编
+    </div>
+    <div class="form_item_box">
+      <input type="text" placeholder="请输入邮编">
+    </div>
+
+    <div class="form_item_label">
+      地址
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box">
+      <input type="text" placeholder="请输入详细地址">
+    </div>
+
+    <div class="form_item_label">
+      归属地
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box_flex" id="placePicker">
+      <span class="withOut_value">请选择归属地</span>
+      <img src="../images/form_item_right.png" alt="" class="form_item_right">
+    </div>
+
+    <div class="form_item_label">
+      联系电话
+      <span class="require_span">*</span>
+    </div>
+    <div class="form_item_box">
+      <input type="number" placeholder="请填写您的联系电话">
+    </div>
+
+    <div class="form_item_label">
+      税收居民身份信息
+    </div>
+    <div class="form_item_box" style="margin-bottom: 0">
+      <input type="number" placeholder="请填写税收居民身份信息">
+    </div>
+  </div>
+</div>
+
+
+<div class="next_submit_btn_box">
+  <div class="next_btn">
+    下一步
+  </div>
+</div>
+</body>
+
+<script>
+
+  $(function () {
+    // 选择性别
+    $('#sexPicker').on('click', function () {
+      weui.picker([
+        {
+          label: '男',
+          value: 0,
+        },
+        {
+          label: '女',
+          value: 1
+        },
+      ], {
+        className: 'custom-classname',
+        container: 'body',
+        onChange: function (result) {
+          console.log(result)
+          // $("#sexPicker span").text(result);
+        },
+        onConfirm: function (result) {
+          console.log(result)
+          if(result.length) {
+            $("#sexPicker span").text(result[0].label).removeClass('withOut_value');
+          }
+        },
+        id: 'sexPicker'
+      });
+    })
+    $('#industryPicker').on('click', function () {
+      weui.picker([
+        {
+          label: '邮电通讯行业',
+          value: 0,
+        },
+        {
+          label: '房地产行业',
+          value: 1
+        },
+        {
+          label: '交通运输行业',
+          value: 2
+        },
+        {
+          label: '法律/司法行业',
+          value: 3
+        },
+        {
+          label: '文化/娱乐/体育行业',
+          value: 4
+        },
+        {
+          label: '媒介/广告行业',
+          value: 5
+        },
+        {
+          label: '科研/教育行业',
+          value: 6
+        },
+        {
+          label: '医疗行业',
+          value: 7
+        },
+        {
+          label: '其他行业',
+          value: 8
+        },
+      ], {
+        className: 'custom-classname',
+        container: 'body',
+        onChange: function (result) {
+          console.log(result)
+          // $("#sexPicker span").text(result);
+        },
+        onConfirm: function (result) {
+          console.log(result)
+          if(result.length) {
+            $("#industryPicker span").text(result[0].label).removeClass('withOut_value');
+          }
+        },
+        id: 'industryPicker'
+      });
+    })
+    $('#occupationPicker').on('click', function () {
+      weui.picker([
+        {
+          label: '公务员',
+          value: 0,
+        },
+        {
+          label: '事业单位员工',
+          value: 1
+        },
+        {
+          label: '公司员工',
+          value: 2
+        },
+        {
+          label: '军人警察',
+          value: 3
+        },
+        {
+          label: '工人',
+          value: 4
+        },
+        {
+          label: '农民',
+          value: 5
+        },
+        {
+          label: '技术人员',
+          value: 6
+        },
+        {
+          label: '私营业主',
+          value: 7
+        },
+        {
+          label: '其他职业',
+          value: 8
+        },
+      ], {
+        className: 'custom-classname',
+        container: 'body',
+        onChange: function (result) {
+          console.log(result)
+          // $("#sexPicker span").text(result);
+        },
+        onConfirm: function (result) {
+          console.log(result)
+          if(result.length) {
+            $("#occupationPicker span").text(result[0].label).removeClass('withOut_value');
+          }
+        },
+        id: 'occupationPicker'
+      });
+    })
+    $('#placePicker').on('click', function () {
+      weui.picker([
+        {
+          label: '铁岭县',
+          value: 0,
+        },
+        {
+          label: '开原市',
+          value: 1
+        },
+        {
+          label: '昌图县',
+          value: 2
+        },
+        {
+          label: '调兵山市',
+          value: 3
+        },
+        {
+          label: '银州区',
+          value: 4
+        },
+        {
+          label: '清河区',
+          value: 5
+        },
+        {
+          label: '铁煤集团',
+          value: 6
+        }
+      ], {
+        className: 'custom-classname',
+        container: 'body',
+        onChange: function (result) {
+          console.log(result)
+          // $("#sexPicker span").text(result);
+        },
+        onConfirm: function (result) {
+          console.log(result)
+          if(result.length) {
+            $("#placePicker span").text(result[0].label).removeClass('withOut_value');
+          }
+        },
+        id: 'placePicker'
+      });
+    })
+
+  })
+
+
+</script>
+
+
+</html>

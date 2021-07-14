@@ -1,0 +1,114 @@
+.next_submit_btn_box {
+  background: rgba(242, 242, 242, 1);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem 0.3rem 0.15rem;
+}
+
+.next_submit_btn_box .next_btn {
+  height: 44px;
+  background: #C71B0A;
+  border-radius: 0.03rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.22rem;
+}
+
+.messageComplete_container {
+  box-sizing: border-box;
+  padding: 0.15rem 0.15rem 1rem 0.15rem;
+}
+
+.messageComplete_container .form_box {
+  background: #FFFFFF;
+  border-radius: 0.03rem;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem;
+}
+
+.messageComplete_container .form_box .form_item_label {
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 0.22rem;
+  display: flex;
+  align-items: center;
+}
+
+.messageComplete_container .form_box .form_item_label .require_span {
+  color: rgba(199, 27, 10, 1)
+}
+
+.messageComplete_container .form_box .form_item_box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.2rem;
+}
+
+.messageComplete_container .form_box .form_item_box input {
+  outline: 0;
+  border: 0;
+  background: #fff;
+  height: 0.36rem;
+  display: block;
+  width: 100%;
+  font-size: 0.12rem;
+}
+
+
+.messageComplete_container .form_box .form_item_box_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.36rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.2rem;
+}
+
+.messageComplete_container .form_box .form_item_box_flex .withOut_value {
+  color: #999999;
+  font-size: 0.12rem;
+}
+
+.messageComplete_container .form_box .form_item_box_flex span {
+  color: #333333;
+  font-size: 0.12rem;
+}
+
+.messageComplete_container .form_box .form_item_box_flex .form_item_right {
+  display: block;
+  width: 0.14rem;
+  height: 0.14rem;
+}
+
+
+input {
+  color: #999999;
+}
+
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #999999;
+  opacity: 1;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #999999;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
