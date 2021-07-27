@@ -1,0 +1,210 @@
+html, body {
+  height: 100%;
+  background-color: #fff !important;
+}
+
+.carStore_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.top_bg_box {
+  min-height: 1.26rem;
+  background-image: url("../images/carStore_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  padding: 0.3rem 0.15rem;
+  display: flex;
+}
+
+.top_bg_box .store_img img {
+  display: block;
+  width: 0.54rem;
+  height: 0.54rem;
+  border-radius: 0.03rem;
+}
+
+.top_bg_box .store_message_box {
+  flex: 1;
+  width: 0;
+  box-sizing: border-box;
+  margin-left: 0.15rem;
+}
+
+.top_bg_box .store_message_box .store_name {
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.22rem;
+  margin-bottom: 0.15rem;
+}
+
+.top_bg_box .store_message_box .store_tip {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 0.17rem;
+}
+
+.productList_box {
+  flex: 1;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0.2rem 0.15rem;
+}
+
+.productList_box  .productList_box_title {
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #333333;
+  line-height: 0.22rem;
+  margin-bottom: 0.15rem;
+}
+
+.productList_box  .productList_box_list {
+  overflow-y: scroll;
+}
+
+.productList_box  .productList_box_list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.productList_box  .productList_box_list .list_item {
+  min-height: 1.1rem;
+  background: #F2F2F2;
+  border-radius: 0.03rem;
+  box-sizing: border-box;
+  padding: 0.15rem;
+  display: flex;
+  margin-bottom: 0.15rem;
+}
+
+
+.productList_box  .productList_box_list .list_item .list_item_img img {
+  display: block;
+  width: 0.6rem;
+  height: 0.8rem;
+  border-radius: 0.03rem;
+}
+
+.productList_box  .productList_box_list .list_item .list_item_message {
+  flex: 1;
+  width: 0;
+  box-sizing: border-box;
+  margin-left: 0.15rem;
+}
+
+.productList_box  .productList_box_list .list_item .list_item_message .list_item_name{
+  font-size: 0.16rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.22rem;
+}
+
+.productList_box  .productList_box_list .list_item .list_item_message .action_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.12rem;
+}
+
+.productList_box  .productList_box_list .list_item .list_item_message .action_box .price{
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #E22121;
+  line-height: 0.22rem;
+}
+
+.productList_box  .productList_box_list .list_item .list_item_message .action_box img{
+  display: block;
+  width: 0.24rem;
+  height: 0.24rem;
+}
+
+.submit_btn_box {
+  width: 100%;
+  height: 0.78rem;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding:0.1rem;
+  display: flex;
+}
+
+.submit_btn_box .clear_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 0.40rem;
+  height: 0.34rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding-right: 0.05rem;
+}
+
+.submit_btn_box .clear_box img {
+  display: block;
+  width: 0.18rem;
+  height: 0.18rem;
+  margin-bottom: 0.02rem;
+}
+.submit_btn_box .clear_box span {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.17rem;
+}
+
+.submit_btn_box .total_submit_box {
+  flex: 1;
+  width: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 0.15rem;
+}
+
+.submit_btn_box .total_submit_box .left {
+
+}
+
+.submit_btn_box .total_submit_box .left .total_p{
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.2rem;
+}
+
+.submit_btn_box .total_submit_box .left .total_p .total_price {
+  color: rgba(226, 33, 33, 1);
+}
+
+.submit_btn_box .total_submit_box .left .checked_num {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #666666;
+  line-height: 0.17rem;
+}
+
+.submit_btn_box .total_submit_box .submit_btn {
+  width: 1.04rem;
+  height: 0.32rem;
+  background: #488FEF;
+  border-radius: 0.03rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.16rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 0.22rem;
+}
+
+
+
