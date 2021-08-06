@@ -1,0 +1,65 @@
+body,html {
+  height: 100%;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0.15rem;
+}
+
+
+.orderScroll_container {
+  height: 100%;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 0.03rem;
+  padding: 0.15rem;
+  overflow: hidden;
+}
+
+
+
+.order_item {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+.order_item .user_img {
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  margin-right: 0.08rem;
+}
+
+.order_message_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#list1, #list2 {
+  min-height: 100%;
+}
+
+.order_item .order_message {
+  font-size: 0.14rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 0.2rem;
+}
+
+.order_item .order_message span {
+  color: rgba(72, 143, 241, 1);
+  font-size: 0.14rem;
+  font-weight: 400;
+  line-height: 0.2rem;
+}
+
+.order_item .order_time {
+  font-size: 0.12rem;
+  font-weight: 400;
+  color: #999999;
+  line-height: 0.17rem;
+}
