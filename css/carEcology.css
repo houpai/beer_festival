@@ -290,9 +290,9 @@ html,body {
   border-radius: 0.03rem;
   border: 1px solid #478FF1;
   box-sizing: border-box;
-  background: #FFFFFF;
   padding: 0.1rem;
   overflow: hidden;
+  background: rgba(65, 139, 242, 0.1);;
 }
 
 
