@@ -15,7 +15,9 @@ html,body {
 
 .carEcology_container .user_detail_box {
   margin: -0.4rem 0.15rem 0.15rem 0.15rem;
-  background-color: rgba(229, 240, 255, 1);
+  background-image: url("../images/carBg124452.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 0.88rem;
   box-sizing: border-box;
   padding: 0.2rem 0.15rem;
