@@ -1,0 +1,170 @@
+body, html {
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+.carIndex_Img {
+    display: block;
+    width: 100%;
+    height: 1.84rem;
+}
+
+.search_input_box {
+    position: relative;
+    margin-top: -0.21rem;
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+    position: relative;
+}
+
+.search_input {
+    background-color: #fff;
+    display: block;
+    height: 0.42rem;
+    border-radius: 0.03rem;
+    border: 0;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.15rem 0 0.36rem;
+}
+
+.search_input_img {
+    display: block;
+    width: 0.16rem;
+    height: 0.16rem;
+    position: absolute;
+    top: 0.12rem;
+    left: 0.3rem;
+}
+
+.pinpai_box {
+    display: flex;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    padding-left: 0.15rem;
+    padding-top: 0.15rem;
+}
+
+.pinpai_box::-webkit-scrollbar {
+    display: none;
+}
+
+.pinpai_box_item {
+    background: #fff;
+    border-radius: 0.03rem;
+    display: flex;
+    flex-direction: column;
+    width: 0.72rem;
+    align-items: center;
+    justify-content: center;
+    height: 1.04rem;
+    margin-right: 0.1rem;
+    flex-shrink: 0;
+}
+
+.pinpai_box_item .pinpai_box_item_img {
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+    margin-bottom: 0.1rem;
+}
+
+.pinpai_box_item .pinpai_box_item_name {
+    font-size: 0.16rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.22rem;
+}
+
+.type_select_box {
+    display: flex;
+    padding: 0 0.15rem;
+    overflow-x: scroll;
+}
+
+.type_select_box::-webkit-scrollbar {
+    display: none;
+}
+
+.type_select_item {
+    flex-shrink: 0;
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.2rem;
+    box-sizing: border-box;
+    padding: 0.15rem 0 0.04rem 0;
+    margin-right: 0.15rem;
+}
+
+.type_select_item.select {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+    border-bottom: 0.04rem solid #488FEF;
+}
+
+.car_list {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 0.15rem;
+    margin-top: 0.2rem;
+}
+
+.car_list_item_container {
+    width: 50%;
+    display: flex;
+}
+
+.car_list_item_container.left {
+    justify-content: flex-start;
+}
+
+.car_list_item_container.right {
+    justify-content: flex-end;
+}
+
+.car_list_item_container .car_list_item {
+    width: 1.65rem;
+    margin-bottom: 0.15rem;
+}
+
+.car_list_item_container .car_list_item .car_img {
+    display: block;
+    width: 100%;
+    height: 1.4rem;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.car_list_item_container .car_list_item .message_box {
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    box-sizing: border-box;
+    padding: 0.06rem 0.08rem;
+
+}
+
+.car_list_item_container .car_list_item .message_box .car_name {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333333;
+    line-height: 0.22rem;
+}
+
+.car_list_item_container .car_list_item .message_box .car_tip {
+    font-size: 0.12rem;
+    font-weight: 400;
+    color: #666666;
+    line-height: 0.17rem;
+    margin: 0.06rem 0;
+}
+
+.car_list_item_container .car_list_item .message_box .car_price {
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #E22121;
+    line-height: 0.22rem;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/carDetail.css">
+  <link rel="stylesheet" href="../css/swiper.css">
+  <script src="../js/fontsize.js"></script>
+  <script src="../js/jquery-1.2.3.min.js"></script>
+  <script src="../js/swiper.min.js"></script>
+</head>
+
+<body>
+<section class="section_container">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../images/carDetail.png" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="../images/carDetail.png" alt="">
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  <div class="price_box">
+    <div class="price_top_box">
+      <div class="price_detail">
+        <div class="price_detail_left">
+          <div class="title_tip">秒杀价</div>
+          <div class="price_detail_div">
+            <span class="current_price">¥6.09万</span>
+            <span class="price">6.39万</span>
+          </div>
+        </div>
+        <div class="computer_box">
+          <img src="../images/jisuanqi.png" alt="">
+          <div class="computer_tip">购车计算器</div>
+        </div>
+      </div>
+      <div class="tip_message_conatiner">
+        首付5.4万起 （限时特惠分期购车立减1740元）
+      </div>
+    </div>
+    <div class="name_box">
+      <div class="name_box_name">奔驰换手机卡开始看很多很多话奔驰换手机卡开始看很多很多</div>
+      <div class="tag_box">
+        <div class="tag_box_container">
+          <div class="tag">可迁沈阳</div>
+          <div class="tag">维保记录</div>
+        </div>
+        <div class="notice_box">
+          <img src="../images/jiangjia.png" alt="">
+          <div class="notice">降价通知</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="message_input_box">
+    <div class="message_input_box_container">
+      <div class="message_input_label">保险</div>
+      <div class="message_input_value">车况品质险由中国人保承保</div>
+    </div>
+    <img src="../images/right_icon3.png" alt="" class="right_img">
+  </div>
+  <div class="message_input_box">
+    <div class="message_input_box_container">
+      <div class="message_input_label">发货</div>
+      <div class="message_input_value">全国物流 全程代办</div>
+    </div>
+    <img src="../images/right_icon3.png" alt="" class="right_img">
+  </div>
+  <div class="message_input_box">
+    <div class="message_input_box_container">
+      <div class="message_input_label">售后</div>
+      <div class="message_input_value">不满意退全款·1年售后·30天保修</div>
+    </div>
+    <img src="../images/right_icon3.png" alt="" class="right_img">
+  </div>
+  
+  <div class="evaluate_box">
+    <div class="evaluate_box_title">口碑</div>
+    <div class="user_box_container">
+      <div class="user_box">
+        <img class="user_img" src="https://img0.baidu.com/it/u=1329709505,2760911286&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=800" alt="" />
+        <div class="name_time">
+          <div class="name">奔驰经典</div>
+          <div class="time">2022-10-10</div>
+        </div>
+      </div>
+      <div class="xing_box">
+        <img src="../images/xingxing.png" alt="" class="xing_img">
+        <img src="../images/xingxing.png" alt="" class="xing_img">
+        <img src="../images/xingxing.png" alt="" class="xing_img">
+        <img src="../images/xingxing.png" alt="" class="xing_img">
+        <img src="../images/xingxing.png" alt="" class="xing_img">
+      </div>
+    </div>
+    <div class="evaluate_detail">
+      电报交换傻大黑粗觉得和绝代风华肌肤回到家附近部分和法国红酒
+    </div>
+  </div>
+  
+</section>
+<div class="bottom">
+  <div class="btn_box">
+    <div class="btn_box_container">
+      <img src="../images/icon_phone.png" alt="">
+      <i>咨询</i>
+    </div>
+    <div class="btn_box_container">
+      <img src="../images/icon_heart.png" alt="">
+      <i>收藏</i>
+    </div>
+  </div>
+  <span class="btn">
+      立即购买
+  </span>
+</div>
+</body>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    autoplay: true,//可选选项，自动滑动
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'custom',
+      renderCustom: function (swiper, current, total) {
+        return current + '/' + total;
+      }
+    },
+  })
+</script>
+
+</html>
